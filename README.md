@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8613912c-cbe6-49b1-a198-a772c036f8ef/deploy-status)](https://app.netlify.com/sites/advenoh-english/deploys)
