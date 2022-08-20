@@ -7,7 +7,7 @@ module.exports = {
     },
     openGraphImage: `assets/avatars/frank.jpg`,
     description: `English Blog`,
-    siteUrl: `https://english.advenoh.pe.kr/`,
+    siteUrl: `https://finance.advenoh.pe.kr/`,
     socialLinks: [
       {
         name: 'github',

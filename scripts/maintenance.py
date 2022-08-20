@@ -27,9 +27,9 @@ BLOG_DIR = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 BLOG_CONTENT_DIR = '/'.join([BLOG_DIR, 'content', 'posts'])
 README_FILE = os.path.join(BLOG_DIR, 'README.md')
 README_HEADER_FILE = '/'.join([BLOG_DIR, 'scripts', 'data', 'HEADER.md'])
-BLOG_HOME_URL = 'https://english.advenoh.pe.kr'
+BLOG_HOME_URL = 'https://finance.advenoh.pe.kr'
 
-REGEX_SUB_PATTERN = '.*\/english.advenoh.pe.kr\/content\/posts'
+REGEX_SUB_PATTERN = '.*\/finance.advenoh.pe.kr\/content\/posts'
 ################################################################################################
 # Functions
 #
@@ -63,7 +63,7 @@ class Generator:
         # write header to the file
         with open(README_FILE, 'a') as out_file:
             out_file.write('\nUpdated ' + datetime.now().strftime('%Y-%m-%d') + '\n\n')
-            out_file.write('현재 [블로그](https://english.advenoh.pe.kr)에 작성된 내용입니다.\n\n')
+            out_file.write('현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.\n\n')
             for category in sorted(self.generated_posting):
                 out_file.write('## {}\n'.format(category))
                 for title_file in sorted(self.generated_posting[category], key=lambda k: k['title']):

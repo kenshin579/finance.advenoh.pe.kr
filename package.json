@@ -38,7 +38,7 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://english.advenoh.pe.kr/",
+  "homepage": "https://finance.advenoh.pe.kr/",
   "keywords": [
     "gatsby",
     "netlify cms"
@@ -46,7 +46,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kenshin579/english.advenoh.pe.kr"
+    "url": "git+https://github.com/kenshin579/finance.advenoh.pe.kr"
   },
   "scripts": {
     "build": "gatsby build",
