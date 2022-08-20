@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `English Blog`,
+    title: `Finance Blog`,
     author: {
       name: `Frank Oh`,
-      summary: `English`,
+      summary: `Finance`,
     },
     openGraphImage: `assets/avatars/frank.jpg`,
-    description: `English Blog`,
+    description: `Finance Blog`,
     siteUrl: `https://finance.advenoh.pe.kr/`,
     socialLinks: [
       {
