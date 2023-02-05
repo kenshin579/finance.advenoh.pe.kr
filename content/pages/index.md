@@ -1,7 +1,7 @@
 ---
 template: 'index-template'
-title: 'Frank Blog'
+title: 'Frank's Investment Blog'
 ---
 
-#안녕하세요. 
+#All about Investment 
 방문해주셔서 감사합니다. 
