@@ -38,17 +38,17 @@ const Header = () => {
           </HeaderNavListItem>
         </HeaderNavList>
       </HeaderWrapper>
-      {/*<script async src="https://www.googletagmanager.com/gtag/js?id=G-B0KLVK60W1"></script>*/}
-      {/*<script*/}
-      {/*    dangerouslySetInnerHTML={{*/}
-      {/*      __html: `*/}
-      {/*      window.dataLayer = window.dataLayer || [];*/}
-      {/*      function gtag(){dataLayer.push(arguments);}*/}
-      {/*      gtag('js', new Date());*/}
-      {/*      gtag('config', 'G-B0KLVK60W1');*/}
-      {/*    `,*/}
-      {/*    }}*/}
-      {/*/>*/}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG76MK8WNZ"></script>
+      <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RG76MK8WNZ');
+          `,
+          }}
+      />
       {/*<script data-ad-client="ca-pub-8868959494983515" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>*/}
     </StyledHeader>
   );
