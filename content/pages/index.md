@@ -1,6 +1,6 @@
 ---
 template: 'index-template'
-title: 'Frank's Investment Blog'
+title: "Frank's Investment Blog"
 ---
 
 #All about Investment 
