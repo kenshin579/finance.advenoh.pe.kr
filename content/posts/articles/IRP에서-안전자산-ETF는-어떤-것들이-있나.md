@@ -12,7 +12,7 @@ IRP (Individual Retirement Pension) 개인형퇴직 연금제도는 근로자가
 
 미래에셋증권에서는 `MY 자산` > `계좌` > `퇴직연금_개인IRP` 선택을 하면 아래와 같이 현재 `위험자산 투자비율`을 확인할 수 있다. 70%가 넘는 경우에는 위험자산인 주식형 ETF를 매수할 수가 없게 된다.
 
-![계좌현황](/media/articles//Safe-Asset/계좌현황.png)
+![계좌현황](/media/articles//Safe-Asset/account.png)
 
 # 안전자산 종류
 
