@@ -64,7 +64,7 @@ date: 2024-05-04
 - 452360	SOL 미국배당다우존스(H)
   - 달러가 높은 경우에는 환율 변동의 영향을 받지 않기 위해서 헤지 상품을 매매한다
 - 458730	TIGER 미국배당다우존스
-  - 운용 보수가 제일 낮다
+  - 운용 보수가 제일 낮고 거래량이 다른 증권사보다 많은 변이다
 
 아래 내용은 [국내 미국배당다우존스 ETF 구글 시트](https://docs.google.com/spreadsheets/d/11kbUc6UClddhaStg6biPkQhFeC8ssGRITeYg1ZDxu8s/edit?usp=sharing)에서 확인할 수 있다
 
