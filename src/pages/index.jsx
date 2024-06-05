@@ -1,6 +1,6 @@
 import React from "react"
 import _ from "lodash"
-import { graphql } from "gatsby"
+import {graphql, Script} from "gatsby"
 
 import Layout from "components/Layout"
 import SEO from "components/SEO"
@@ -11,6 +11,7 @@ import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
+import Analytics from "../components/GoogleAnalytics";
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -28,6 +29,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
+      <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
       <VerticalSpace size={48} />
       <Bio />
