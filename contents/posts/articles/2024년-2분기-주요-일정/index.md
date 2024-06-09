@@ -16,6 +16,9 @@ series: "2024년 글로벌 시장 전망 및 주요 일정"
 
 2024년 2분기 주요 일정 정리한 내용 공유합니다. 4월 말에는 비트코인 반감기가 있어서 관심을 가질 만하고 5월에는 구를 I/O, 6월에 애플 WWDC 컨퍼런스가 예정되어 있어서 관련 주식을 모니터링할 필요가 있다.
 
+> 2분기 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에서 확인할 수 있습니다.
+  
+
 ## 4월
 
 - 4/5~10 AACR 미국암학회
