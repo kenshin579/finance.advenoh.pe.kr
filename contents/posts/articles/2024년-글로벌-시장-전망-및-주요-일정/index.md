@@ -63,7 +63,7 @@ tags:
 
 ## 3. 정리
 
-분기별로 더 세분화해서 Series로 작성할 예정이다. 그리고 PC나 핸드폰에서도 쉽게 일정을 확인할 수 있어야 해서 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에 입력해 두기 시작했다.
+분기별로 더 세분화해서 시리즈로 작성할 예정이다. 그리고 PC나 핸드폰에서도 쉽게 일정을 확인할 수 있어야 해서 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에 입력해 두기 시작했다.
 
 > 구글 캘린더에 올해 모든 주요 이벤트를 다 입력하지는 못했다. 내가 관심 있는 종목 위주로 정리를 해서 참고만 해주시면 좋을 듯합니다
 
