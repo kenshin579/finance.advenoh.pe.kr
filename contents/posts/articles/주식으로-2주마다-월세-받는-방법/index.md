@@ -98,4 +98,4 @@ KODEX는 올해 상장이 되어서 최근 3개월까지만 수익률을 볼 수
 - 476800	[KODEX 한국부동산리츠인프라](https://finance.naver.com/item/main.naver?code=476800)
 - 329200	[TIGER 리츠부동산인프라](https://finance.naver.com/item/main.naver?code=329200)
 
-> 이 글을 작성하면서 ETF가 상장폐지가 되면 어떻게 되나? 궁금해서 다음 포스팅에서 커버해보도록 하겠습니다
+> 이 글을 작성하면서 [ETF가 상장폐지가 되면 어떻게 되나?](https://finance.advenoh.pe.kr/ETF-%EC%83%81%EC%9E%A5%ED%8F%90%EC%A7%80%EA%B0%80-%EB%90%98%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%90%98%EB%82%98/) 궁금해서 다음 포스팅에서 커버해보도록 하겠습니다
