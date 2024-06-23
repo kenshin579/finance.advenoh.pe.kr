@@ -18,7 +18,8 @@ tags:
 
 ## 개요
 
-https://www.youtube.com/watch?v=J_ZIXpMo-B8
+[![박곰희TV](https://img.youtube.com/vi/J_ZIXpMo-B8/0.jpg)](https://www.youtube.com/watch?v=J_ZIXpMo-B8)
+
 
 주식 투자를 하다 보니 내가 기대하는 수익률이 무엇인지 고민하게 되었다. 예금보다는 조금 높았으면 좋겠고, 물론 대박을 터트리면 가장 좋겠지만, 1년 동안 주식을 해보니 잃지 않는 투자가 쉽지 않다는 것을 알게 되었다. 또한, 내가 욕심이 많다는 것도 깨달았다. 터무니없이 높은 수익률을 기대하는 대신 현실적인 목표를 설정하는 것이 중요하다는 생각이 들었다.
 
