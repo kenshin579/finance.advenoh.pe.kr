@@ -14,7 +14,7 @@ series: "2024년 글로벌 시장 전망 및 주요 일정"
 
 2024년 4분기 주요 일정을 정리한다. 3분기에 이어서 4분기에도 게임 관련 이벤트가 있고 연말에는 세계 곳곳의 뷰티 업계 이벤트가 있다. 그외에 10월에는 파리에서 국세 식품전시회 Sial Paris도 개최가 된다. 11월에 미국 대선이 있어서 주식 시장이 휘청휘청하지 않을 까 싶다.
 
->  3분기 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에서 확인할 수 있습니다.
+>  4분기 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에서 확인할 수 있습니다.
 
 ## 4분기 키워드
 
