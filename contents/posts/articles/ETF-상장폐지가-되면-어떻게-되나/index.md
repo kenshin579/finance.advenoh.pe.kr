@@ -2,7 +2,7 @@
 title: "ETF 상장폐지가 되면 어떻게 되나?"
 description: "ETF 상장폐지가 되면 어떻게 되나?"
 date: 2024-06-16
-update: 2024-06-16
+update: 2024-07-05
 tags:
   - ETF
   - 상장폐지
