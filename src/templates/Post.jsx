@@ -7,6 +7,7 @@ import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
 import Analytics from "../components/GoogleAnalytics";
+import Adsense from "../components/GoogleAdsense";
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -51,6 +52,7 @@ const Post = ({ data }) => {
         <Article.Body html={post.html} />
         <Article.Footer previous={previous} next={next} />
       </Article>
+      <Adsense />
     </Layout>
   )
 }
