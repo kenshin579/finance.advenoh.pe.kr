@@ -21,7 +21,7 @@ tags:
   - gatsby-plugin-robots-txt
 ---
 
-# 1. 개요
+## 1. 개요
 
 기존 [IT 블로그](https://blog.advenoh.pe.kr/)의 Gatsby 테마를 변경한 이후부터 검색 노출이 확 줄게 되어서 구글 검색에 더 많이 노출하려면 어떻게 하는지 알아보았다.
 
@@ -32,9 +32,9 @@ tags:
 
 ![구글 Analytics](image-20240720212332310.png)
 
-# 2. Gatsby GEO 최적화하기
+## 2. Gatsby GEO 최적화하기
 
-## 2.1 Gatsby 블로그에 sitemap 생성하기
+### 2.1 Gatsby 블로그에 sitemap 생성하기
 
 `sitemap.xml`은 검색엔진이 사이트의 구조를 이해하고 크롤링할 수 있도록 도와주는 파일이다. Gatsby에서 `sitemap.xml` 을 생성하는 방법은 다음과 같다.
 
@@ -52,7 +52,7 @@ plugins: [
 ]
 ```
 
-## 2.2 robots. 설정하기
+### 2.2 robots. 설정하기
 
 `robots.txt` 파일은 검색엔진 봇이 어떤 페이지를 크롤링하고 어떤 페이지를 크롤링하지 말아야 할지를 지정하는 파일이다. Gatsby에서 `robots.txt`를 설정하는 방법은 다음과 같다.
 
@@ -77,7 +77,7 @@ plugins: [
 ]
 ```
 
-## 2.3 로컬환경에서 확인해보기
+### 2.3 로컬환경에서 확인해보기
 
 실제 production에 배포하는 것처럼 로컬환경에서 배포한다.
 
@@ -89,7 +89,7 @@ plugins: [
 
 ![XML Sitemap](image-20240720212442012.png)
 
-# 3. 구글 Search Console에 sitemap 등록하기
+## 3. 구글 Search Console에 sitemap 등록하기
 
 `sitemap.xml`, `robots.txt` 를 생성한 후, 이를 Google Search Console에 등록하여 구글이 블로그의 구조를 이해하고 크롤링하도록 한다. 등록하는 절차는 다음과 같다.
 
@@ -102,7 +102,7 @@ plugins: [
 
 조금 더 구글 검색에서 내 블로그가 더 많이 노출되기를 기대해 본다.
 
-# 4. 참고
+## 4. 참고
 
 - [Gatsby 블로그에 advanced-sitemap 플러그인 추가하는 법](https://janeljs.github.io/blog/gatsby-advanced/)
 - [Gatsby 블로그 SEO 설정하기](https://chamdom.blog/gatsby-blog-seo-1/)
