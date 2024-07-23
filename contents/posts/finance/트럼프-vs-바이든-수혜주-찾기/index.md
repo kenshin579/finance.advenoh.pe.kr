@@ -147,6 +147,6 @@ tags:
 ## 5. 참고
 
 - [10분 요약 정리 ㅣ 트럼프 핵심 공약과 수혜주 (경제유튜버 유사남) ㅣ 240717 굿모닝인포맥스](https://www.youtube.com/watch?v=-K0-TYd3LJ0)
-- *트럼프 압승 예상하는 월가, 증시 대혼란에 대비해야 할까](https://www.youtube.com/watch?v=XkDSnyA8S6A)
+- [*트럼프 압승 예상하는 월가, 증시 대혼란에 대비해야 할까](https://www.youtube.com/watch?v=XkDSnyA8S6A)
 - [미국 대선: 트럼프와 바이든 중 누가 앞서고 있나?](https://www.bbc.com/korean/international-53676434)
 - [이슈 캐치업 - 미국 대선 후보 '바이든 vs 트럼프' 대격돌, 수혜 업종 미리 찾기!](https://www.youtube.com/watch?v=Rlmjs-5yh8I)
