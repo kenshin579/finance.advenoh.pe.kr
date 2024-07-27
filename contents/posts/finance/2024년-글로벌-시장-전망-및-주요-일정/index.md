@@ -62,7 +62,7 @@ series: "2024년 글로벌 시장 전망 및 주요 일정"
   - 민주당: 제정지출 확대, 정부부채 심화
   - 공화당: First America, Only America 심화
 
-## 3. 정리
+## 3. 마무리
 
 분기별로 더 세분화해서 시리즈로 작성할 예정이다. 그리고 PC나 핸드폰에서도 쉽게 일정을 확인할 수 있어야 해서 주요 일정은 [구글 캘린더](https://calendar.google.com/calendar/u/0?cid=OGNjOTU3OWMwYmUyMDA0ODZjMWViZGQ4ODAxODcyMDc3OTRiMDdjMWU3NmRjMGIzNjYxOWZlMzA5ZjdjNTM4M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)에 입력해 두기 시작했다.
 
