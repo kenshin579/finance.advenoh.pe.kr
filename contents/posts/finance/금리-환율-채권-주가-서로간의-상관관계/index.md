@@ -101,7 +101,8 @@ tags:
 
 TradingView를 사용하시는 분들이 있을 듯해서 몽키님이 자주 사용하는 지수는 제 [Watch List](https://www.tradingview.com/watchlists/98909855/)로 공유합니다.
 
-## 정리
+## 마무리
+
 - 금리가 오르면, 채권, 달러 가격이 오른다
 
 ## 참고
