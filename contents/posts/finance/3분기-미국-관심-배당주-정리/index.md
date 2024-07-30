@@ -46,28 +46,30 @@ tags:
 
 배당주 관련해서 여러 책도 많이 있어서 굳이 여러 책을 읽기보다는 한 권이면 충분한 것 같고 다 읽지 않아도 바로 시작해도 괜찮지 않을까 싶다. 100% 다 이해를 못해도 1주라도 매매해 보면서 빠르게 접하는 걸 추천한다.
 
-
-
-<img src="XL.jpeg" alt="img" style="zoom:33%;" />
-
 [미국 배당주 투자지도](https://ridibooks.com/books/754026095?_s=search&_q=미국배당주&_rdt_sid=search&_rdt_idx=2)
 
 - 우선주, 배당성장주, 고배당주에 전체적으로 알 수 있는 책이다
 
+![미국 배당주 투자지도](image-20240731001205299.png)
 
-<img src="xxlarge.jpeg" alt="img" style="zoom:50%;" />
+
 
 [나는 배당투자로 매일 스타벅스 커피를 공짜로 마신다](https://ridibooks.com/books/222003168?_s=search&_q=배당투자로&_rdt_sid=search&_rdt_idx=0)
 
 - 저자는 유튜버 수페TV로 배당투자에 대한 기초 지식과 리츠, 배당 ETF에 대해서도 잘 설명한 책이다
 
+![나는 배당투자로 매일 스타벅스 커피를 공짜로 마신다](image-20240731001339722.png)
 
-<img src="xxlarge-20240730224512475.jpeg" alt="img" style="zoom:50%;" />
+
 
 [잠든 사이 월급 버는 미국 배당주 투자](https://ridibooks.com/books/1314000053?_s=search&_q=배당주&_rdt_sid=search&_rdt_idx=1)
 
 - 저자는 유튜버 소수몽키로 미국 배당주 입문 책으로 추천한다
 - 미국 투자에 관심이 있으면 [소수몽키의  한 권으로 끝내는 미국주식](https://ridibooks.com/books/754031015?_rdt_sid=author_books&_rdt_idx=1)도 추천한다
+
+![미국 배당주 투자](image-20240731001430878.png)
+
+
 
 ## 3. 미국 배당주 최종 정리
 
