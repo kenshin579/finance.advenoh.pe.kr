@@ -25,6 +25,8 @@ tags:
 
 정인구님의 [오늘 CPI 예상과 침체에 대한 생각](https://www.youtube.com/watch?v=YRFZ5Y9Bc7k) 영상을 보면서 `침체`, `인플레이션`, `국가부채`, `양적 완화`, `빈부격차` 간의 관계가 어떻게 얽혀 있고 서로 어떻게 영향을 미치는지 잘 설명이 되어 있어서 스터디 차원에서 정리해둔다.
 
+- [![정인구](https://img.youtube.com/vi/YRFZ5Y9Bc7k/0.jpg)](https://www.youtube.com/watch?v=YRFZ5Y9Bc7k)
+
 ## 2. 경제적 개념
 
 먼저 각각의 개념이 무엇인지 알아보고 어떻게 상호작용하는지도 살펴본다.
