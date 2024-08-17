@@ -5,15 +5,17 @@ date: 2024-08-17
 update: 2024-08-17
 tags:
   - 포트폴리오
-  - 대가의 포르폴리오
+  - 대가의 포트폴리오
   - 워렌 버핏
   - 워런 버핏
   - 13f
+  - Form 13
   - 버크셔 해서웨이
   - Berkshire Hathaway
   - Warren Buffett
   - 애플
   - AAPL
+  - 버핏 포트폴리오
 series: "주식 대가들의 포트폴리오"
 ---
 
@@ -86,49 +88,49 @@ series: "주식 대가들의 포트폴리오"
 
 ### 2.4 전체 포트폴리오 목록
 
-|      | 티커  | 회사명                       | 섹터                | 비중  | 보유 총금액 | 보유 주식수   |
-| ---- | ----- | ---------------------------- | ------------------- | ----- | ----------- | ------------- |
-| 1    | AAPL  | APPLE INC                    | Technology          | 30%   | 84,248,000  | 400,000,000   |
-| 2    | BAC   | BANK AMER CORP               | Finance             | 15%   | 41,076,524  | 1,032,852,006 |
-| 3    | AXP   | AMERICAN EXPRESS CO          | Finance             | 13%   | 35,105,457  | 151,610,700   |
-| 4    | KO    | COCA COLA CO                 | Consumer Defensive  | 9.10% | 25,460,000  | 400,000,000   |
-| 5    | CVX   | CHEVRON CORP NEW             | Energy              | 6.60% | 18,553,059  | 118,610,534   |
-| 6    | OXY   | OCCIDENTAL PETE CORP         | Energy              | 5.70% | 16,090,394  | 255,281,524   |
-| 7    | MCO   | MOODYS CORP                  | Finance             | 3.70% | 10,384,249  | 24,669,778    |
-| 8    | KHC   | KRAFT HEINZ CO               | Consumer Defensive  | 3.70% | 10,491,953  | 325,634,818   |
-| 9    | CB    | CHUBB LIMITED                | Finance             | 2.50% | 6,895,777   | 27,033,784    |
-| 10   | DVA   | DAVITA INC                   | Health Services     | 1.80% | 5,001,763   | 36,095,570    |
-| 11   | C     | CITIGROUP INC                | Finance             | 1.30% | 3,505,834   | 55,244,797    |
-| 12   | KR    | KROGER CO                    | Consumer Defensive  | 0.90% | 2,496,500   | 50,000,000    |
-| 13   | V     | VISA INC                     | Finance             | 0.80% | 2,177,834   | 8,297,460     |
-| 14   | VRSN  | VERISIGN INC                 | Technology          | 0.80% | 2,278,615   | 12,815,613    |
-| 15   | AMZN  | AMAZON COM INC               | Technology          | 0.70% | 1,932,500   | 10,000,000    |
-| 16   | MA    | MASTERCARD INC               | Finance             | 0.60% | 1,758,749   | 3,986,648     |
-| 17   | LSXMK | LIBERTY MEDIA CORP DEL       | Media               | 0.60% | 1,551,264   | 70,002,897    |
-| 18   | NU    | NU HLDGS LTD                 | Finance             | 0.50% | 1,380,761   | 107,118,784   |
-| 19   | COF   | CAPITAL ONE FINL CORP        | Finance             | 0.50% | 1,359,447   | 9,819,052     |
-| 20   | CHTR  | CHARTER COMMUNICATIONS INC N | Communications      | 0.40% | 1,144,700   | 3,828,941     |
-| 21   | AON   | AON PLC                      | Finance             | 0.40% | 1,203,678   | 4,100,000     |
-| 22   | ALLY  | ALLY FINL INC                | Finance             | 0.40% | 1,150,430   | 29,000,000    |
-| 23   | TMUS  | T-MOBILE US INC              | Communications      | 0.30% | 823,112     | 4,672,000     |
-| 24   | LSXMA | LIBERTY MEDIA CORP DEL       | Media               | 0.30% | 779,286     | 35,182,219    |
-| 25   | FWONK | LIBERTY MEDIA CORP DEL       | Media               | 0.20% | 554,780     | 7,722,451     |
-| 26   | LPX   | LOUISIANA PAC CORP           | Non-Energy Minerals | 0.20% | 491,081     | 5,964,793     |
-| 27   | LLYVK | LIBERTY MEDIA CORP DEL       | Media               | 0.10% | 417,818     | 10,917,661    |
-| 28   | SIRI  | SIRIUS XM HOLDINGS INC       | Media               | 0.10% | 376,045     | 132,878,213   |
-| 29   | FND   | FLOOR & DECOR HLDGS INC      | Consumer Cyclical   | 0.10% | 395,440     | 3,977,870     |
-| 30   | ULTA  | ULTA BEAUTY INC              | Consumer Cyclical   | 0.10% | 266,291     | 690,106       |
-| 31   | LLYVA | LIBERTY MEDIA CORP DEL       | Media               | 0.10% | 187,046     | 4,986,588     |
-| 32   | HEI-A | HEICO CORP NEW               | Industrials         | 0.10% | 185,373     | 1,044,242     |
-| 33   | NVR   | NVR INC                      | Consumer Cyclical   | 0.00% | 84,324      | 11,112        |
-| 34   | DEO   | DIAGEO P L C                 | Consumer Defensive  | 0.00% | 28,714      | 227,750       |
-| 35   | LILA  | LIBERTY LATIN AMERICA LTD    | LILA                | 0.00% | 25,281      | 2,630,792     |
-| 36   | JEF   | JEFFERIES FINL GROUP INC     | Finance             | 0.00% | 21,573      | 433,558       |
-| 37   | VOO   | VANGUARD INDEX FDS           | ETF                 | 0.00% | 21,505      | 43,000        |
-| 38   | SPY   | SPDR S&P 500 ETF TR          | ETF                 | 0.00% | 21,442      | 39,400        |
-| 39   | LEN-B | LENNAR CORP                  | Consumer Cyclical   | 0.00% | 21,273      | 152,572       |
-| 40   | LILAK | LIBERTY LATIN AMERICA LTD    | Communications      | 0.00% | 12,352      | 1,284,020     |
-| 41   | BATRK | ATLANTA BRAVES HLDGS INC     | Media               | 0.00% | 8,820       | 223,645       |
+|      | 티커    | 회사명                       | 섹터                | 비중  | 보유 총금액 | 보유 주식수   |
+| ---- | ------- | ---------------------------- | ------------------- | ----- | ----------- | ------------- |
+| 1    | `AAPL`  | APPLE INC                    | Technology          | 30%   | 84,248,000  | 400,000,000   |
+| 2    | `BAC`   | BANK AMER CORP               | Finance             | 15%   | 41,076,524  | 1,032,852,006 |
+| 3    | `AXP`   | AMERICAN EXPRESS CO          | Finance             | 13%   | 35,105,457  | 151,610,700   |
+| 4    | `KO`    | COCA COLA CO                 | Consumer Defensive  | 9.10% | 25,460,000  | 400,000,000   |
+| 5    | `CVX`   | CHEVRON CORP NEW             | Energy              | 6.60% | 18,553,059  | 118,610,534   |
+| 6    | `OXY`   | OCCIDENTAL PETE CORP         | Energy              | 5.70% | 16,090,394  | 255,281,524   |
+| 7    | `MCO`   | MOODYS CORP                  | Finance             | 3.70% | 10,384,249  | 24,669,778    |
+| 8    | `KHC`   | KRAFT HEINZ CO               | Consumer Defensive  | 3.70% | 10,491,953  | 325,634,818   |
+| 9    | `CB`    | CHUBB LIMITED                | Finance             | 2.50% | 6,895,777   | 27,033,784    |
+| 10   | `DVA`   | DAVITA INC                   | Health Services     | 1.80% | 5,001,763   | 36,095,570    |
+| 11   | `C`     | CITIGROUP INC                | Finance             | 1.30% | 3,505,834   | 55,244,797    |
+| 12   | `KR`    | KROGER CO                    | Consumer Defensive  | 0.90% | 2,496,500   | 50,000,000    |
+| 13   | `V`     | VISA INC                     | Finance             | 0.80% | 2,177,834   | 8,297,460     |
+| 14   | `VRSN`  | VERISIGN INC                 | Technology          | 0.80% | 2,278,615   | 12,815,613    |
+| 15   | `AMZN`  | AMAZON COM INC               | Technology          | 0.70% | 1,932,500   | 10,000,000    |
+| 16   | `MA`    | MASTERCARD INC               | Finance             | 0.60% | 1,758,749   | 3,986,648     |
+| 17   | `LSXMK` | LIBERTY MEDIA CORP DEL       | Media               | 0.60% | 1,551,264   | 70,002,897    |
+| 18   | `NU`    | NU HLDGS LTD                 | Finance             | 0.50% | 1,380,761   | 107,118,784   |
+| 19   | `COF`   | CAPITAL ONE FINL CORP        | Finance             | 0.50% | 1,359,447   | 9,819,052     |
+| 20   | `CHTR`  | CHARTER COMMUNICATIONS INC N | Communications      | 0.40% | 1,144,700   | 3,828,941     |
+| 21   | `AON`   | AON PLC                      | Finance             | 0.40% | 1,203,678   | 4,100,000     |
+| 22   | `ALLY`  | ALLY FINL INC                | Finance             | 0.40% | 1,150,430   | 29,000,000    |
+| 23   | `TMUS`  | T-MOBILE US INC              | Communications      | 0.30% | 823,112     | 4,672,000     |
+| 24   | `LSXMA` | LIBERTY MEDIA CORP DEL       | Media               | 0.30% | 779,286     | 35,182,219    |
+| 25   | `FWONK` | LIBERTY MEDIA CORP DEL       | Media               | 0.20% | 554,780     | 7,722,451     |
+| 26   | `LPX`   | LOUISIANA PAC CORP           | Non-Energy Minerals | 0.20% | 491,081     | 5,964,793     |
+| 27   | `LLYVK` | LIBERTY MEDIA CORP DEL       | Media               | 0.10% | 417,818     | 10,917,661    |
+| 28   | `SIRI`  | SIRIUS XM HOLDINGS INC       | Media               | 0.10% | 376,045     | 132,878,213   |
+| 29   | `FND`   | FLOOR & DECOR HLDGS INC      | Consumer Cyclical   | 0.10% | 395,440     | 3,977,870     |
+| 30   | `ULTA`  | ULTA BEAUTY INC              | Consumer Cyclical   | 0.10% | 266,291     | 690,106       |
+| 31   | `LLYVA` | LIBERTY MEDIA CORP DEL       | Media               | 0.10% | 187,046     | 4,986,588     |
+| 32   | `HEI-A` | HEICO CORP NEW               | Industrials         | 0.10% | 185,373     | 1,044,242     |
+| 33   | `NVR`   | NVR INC                      | Consumer Cyclical   | 0.00% | 84,324      | 11,112        |
+| 34   | `DEO`   | DIAGEO P L C                 | Consumer Defensive  | 0.00% | 28,714      | 227,750       |
+| 35   | `LILA`  | LIBERTY LATIN AMERICA LTD    | LILA                | 0.00% | 25,281      | 2,630,792     |
+| 36   | `JEF`   | JEFFERIES FINL GROUP INC     | Finance             | 0.00% | 21,573      | 433,558       |
+| 37   | `VOO`   | VANGUARD INDEX FDS           | ETF                 | 0.00% | 21,505      | 43,000        |
+| 38   | `SPY`   | SPDR S&P 500 ETF TR          | ETF                 | 0.00% | 21,442      | 39,400        |
+| 39   | `LEN-B` | LENNAR CORP                  | Consumer Cyclical   | 0.00% | 21,273      | 152,572       |
+| 40   | `LILAK` | LIBERTY LATIN AMERICA LTD    | Communications      | 0.00% | 12,352      | 1,284,020     |
+| 41   | `BATRK` | ATLANTA BRAVES HLDGS INC     | Media               | 0.00% | 8,820       | 223,645       |
 
 ## 3. 마무리
 
