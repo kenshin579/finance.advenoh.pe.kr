@@ -89,7 +89,7 @@ Summary 텝에서 다양한 분석 결과를 보여주고 있어서 투자의 �
 
 ![HedgeFollow - 성능 비교](image-20240817165505951.png)
 
-### 2.5 [WhaleWisdom - BERKSHIRE HATHAWAY INC](https://whalewisdom.com/filer/berkshire-hathaway-inc)
+### 2.4 [WhaleWisdom - BERKSHIRE HATHAWAY INC](https://whalewisdom.com/filer/berkshire-hathaway-inc)
 
 이 사이트는 대가들의 포트폴리오뿐만 아니라 그들의 투자 움직임과 성과를 추적할 수 있는 다양한 분석 도구를 제공한다. 특히, 헤지펀드들의 투자 성과를 비교하는 데 유용하다.
 
