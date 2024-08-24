@@ -9,7 +9,7 @@ tags:
   - 환노출
   - 환헤지
   - hedge
-  - unhege
+  - unhedge
   - 미국금리
   - 환율하락
   - 환율상승
