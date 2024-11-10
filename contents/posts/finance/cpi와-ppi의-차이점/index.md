@@ -56,4 +56,4 @@ tags:
 # 참고
 
 - https://chat.openai.com/chat
-- https://binbong.tistory.com/entry/%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%85%98-CPI-PPI-%EB%AC%BC%EA%B0%80%EC%A7%80%EC%88%98-%EB%9C%BB-%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%A3%BC%EC%8B%9D%EC%8B%9C%EC%9E%A5-%EC%98%81%ED%96%A5
+- [인플레이션 CPI PPI 뜻과 상관관계, 주식시장에 끼치는 영향](https://binbong.tistory.com/entry/%EC%9D%B8%ED%94%8C%EB%A0%88%EC%9D%B4%EC%85%98-CPI-PPI-%EB%AC%BC%EA%B0%80%EC%A7%80%EC%88%98-%EB%9C%BB-%EC%83%81%EA%B4%80%EA%B4%80%EA%B3%84-%EC%A3%BC%EC%8B%9D%EC%8B%9C%EC%9E%A5-%EC%98%81%ED%96%A5)
