@@ -36,7 +36,7 @@ tags:
 개인적으로 ETF 종목도 [구글 시트](https://docs.google.com/spreadsheets/d/11kbUc6UClddhaStg6biPkQhFeC8ssGRITeYg1ZDxu8s/edit?gid=2061047286#gid=2061047286)로 정리를 하는데요. 이번에 리치노마드에서 ETF 비교하는 사이트를 보고 검색을 해보니 [ETF Check](https://www.etfcheck.co.kr/mobile/etpitem/476800/compare?compCode[]=329200)이라는 사이트를 알게 되어서 ETF 비교할 때 유용하게 잘 사용할 수 있을 듯하다.
 
 > ETF Check에서는 실제 총운용보수 금액도 확인할 수 있어서 좋다. 네이버 금융의 경우에는 추가 비용 없는 운용보수 금액만 보여주고 있어서 금융투자협회 사이트에 들어가서 매번 확인해야 했는데, 이제는 ETF Check 사이트에서 확인하면 될 듯하다. 
-> 참고: [국내 미국다우존스 ETF 중에서 어떤 것을 선택하면 좋을까?](https://finance.advenoh.pe.kr/국내-미국다우존스-ETF중에서-어떤-것을-선택하면-좋을까/)
+> 참고: [국내 미국다우존스 ETF 중에서 어떤 것을 선택하면 좋을까?](https://finance.advenoh.pe.kr/국내-미국다우존스-etf중에서-어떤-것을-선택하면-좋을까/)
 
 - `KODEX 한국부동산리츠인프라`
   - 이번에 처음 알게 된 ETF이다. 상장 일자도 올해 2024/3월에 상장을 했고 규모 크기도 486억이라서 TIGER 증권사보다 훨씬 적은 편이다
@@ -98,4 +98,4 @@ KODEX는 올해 상장이 되어서 최근 3개월까지만 수익률을 볼 수
 - 476800	[KODEX 한국부동산리츠인프라](https://finance.naver.com/item/main.naver?code=476800)
 - 329200	[TIGER 리츠부동산인프라](https://finance.naver.com/item/main.naver?code=329200)
 
-> 이 글을 작성하면서 [ETF가 상장폐지가 되면 어떻게 되나?](https://finance.advenoh.pe.kr/ETF-%EC%83%81%EC%9E%A5%ED%8F%90%EC%A7%80%EA%B0%80-%EB%90%98%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%90%98%EB%82%98/) 궁금해서 다음 포스팅에서 커버해보도록 하겠습니다
+> 이 글을 작성하면서 [ETF가 상장폐지가 되면 어떻게 되나?](https://finance.advenoh.pe.kr/etf-상장폐지가-되면-어떻게-되나/) 궁금해서 다음 포스팅에서 커버해보도록 하겠습니다
