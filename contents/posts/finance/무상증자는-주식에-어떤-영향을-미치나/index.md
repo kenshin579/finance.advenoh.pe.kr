@@ -44,13 +44,13 @@ tags:
 
 ### 2.3 예. 이지바이오 200% `무상증자` 공시
 
-![전자공시 - 이지바이오](/Users/user/WebstormProjects/finance.advenoh.pe.kr/contents/posts/finance/무상증자는-주식에-어떤-영향을-미치나/image-20241130153513688.png)
+![전자공시 - 이지바이오](image-20241130153513688.png)
 
 [이지바이오](https://finance.naver.com/item/dart.naver?code=353810)의 200% `무상증자` 공시 내용이다. 200% `무상증자`를 하는 거라서 1주당 2주를 공짜로 받게 된다. 100주를 가진 주주라면 200주를 공짜로 받아서 300주를 보유하게 되는 것이다.
 
 ### 2.3 `무상증자` 일정
 
-![`무상증자` 일정 - 이지바이오](/Users/user/WebstormProjects/finance.advenoh.pe.kr/contents/posts/finance/무상증자는-주식에-어떤-영향을-미치나/image-20241130153533221.png)
+![`무상증자` 일정 - 이지바이오](image-20241130153533221.png)
 
 `무상증자`는 청약도 없기 때문에 신주배정기준일만 잘 체크하면 된다.
 
