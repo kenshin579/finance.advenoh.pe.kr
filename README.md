@@ -55,6 +55,7 @@ Updated 2024-12-01
 * [기대수익률에 따른 투자](https://finance.advenoh.pe.kr/기대수익률에-따른-투자/)
 * [달러 환전시 증권사 vs 은행권 어디가 좋을까요](https://finance.advenoh.pe.kr/달러-환전시-증권사-vs-은행권-어디가-좋을까요/)
 * [드러캔밀러의 투자 조언](https://finance.advenoh.pe.kr/드러켄밀러의-투자-조언/)
+* [매매사실을 꼭 공시해야하는 투자자들은 누구인가](https://finance.advenoh.pe.kr/매매사실을-꼭-공시해야하는-투자자들은-누구인가/)
 * [무상증자는 주식에 어떤 영향을 미치나](https://finance.advenoh.pe.kr/무상증자는-주식에-어떤-영향을-미치나/)
 * [미국 3대 주가 지수](https://finance.advenoh.pe.kr/미국-3대-지수-차이점/)
 * [미래에셋에서 매매수익률 확인하는 방법](https://finance.advenoh.pe.kr/미래에셋에서-매매수익률-확인하는-방법/)
