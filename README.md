@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2024-12-01
+Updated 2024-12-27
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -66,6 +66,7 @@ Updated 2024-12-01
 * [연금저축이란?](https://finance.advenoh.pe.kr/연금저축이란/)
 * [월별 투자 금액 확인하는 방법](https://finance.advenoh.pe.kr/월별-투자-금액-확인하는-방법/)
 * [유상증자는 주식에 어떤 영향을 주나](https://finance.advenoh.pe.kr/유상증자는-주식에-어떤-영향을-주나/)
+* [자사주 매입이란](https://finance.advenoh.pe.kr/자사주-매입이란/)
 * [주식 대가들의 포트폴리오 확인하는 방법](https://finance.advenoh.pe.kr/주식-대가들의-포트폴리오-확인하는-방법/)
 * [주식 세금 종류](https://finance.advenoh.pe.kr/주식-세금-종류/)
 * [주식 시장 개장시간 정리](https://finance.advenoh.pe.kr/주식-시장-개장시간-정리/)
