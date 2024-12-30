@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2024-12-27
+Updated 2024-12-30
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -61,6 +61,7 @@ Updated 2024-12-27
 * [미래에셋에서 매매수익률 확인하는 방법](https://finance.advenoh.pe.kr/미래에셋에서-매매수익률-확인하는-방법/)
 * [서킷브레이커 vs 사이드카의 차이, 주가지수 폭락 시 작동하는 장치](https://finance.advenoh.pe.kr/서킷브레이커-vs-사이드카의-차이-주가지수-폭락-시-작동하는-장치/)
 * [성장주와 가치주의 차이점](https://finance.advenoh.pe.kr/성장주와-가치주의-차이점/)
+* [액면분할이란](https://finance.advenoh.pe.kr/액면분할이란/)
 * [연금계좌 납입금액 확인하는 방법](https://finance.advenoh.pe.kr/연금계좌-납입금액-확인하는-방법/)
 * [연금저축에서 MMF 단기 상품 매매하는 방법](https://finance.advenoh.pe.kr/연금저축에서-mmf-단기-상품-매매하는-방법/)
 * [연금저축이란?](https://finance.advenoh.pe.kr/연금저축이란/)
