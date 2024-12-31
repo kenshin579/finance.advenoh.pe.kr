@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2024-12-30
+Updated 2024-12-31
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
