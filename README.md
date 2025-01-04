@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2024-12-30
+Updated 2025-01-04
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -39,6 +39,7 @@ Updated 2024-12-30
 * [2024년 2분기 주요 일정](https://finance.advenoh.pe.kr/2024년-2분기-주요-일정/)
 * [2024년 3분기 주요 일정](https://finance.advenoh.pe.kr/2024년-3분기-주요-일정/)
 * [2024년 4분기 주요 이벤트](https://finance.advenoh.pe.kr/2024년-4분기-주요-일정/)
+* [2024년 ETF 주식 계좌 vs 토스 소수점 주식 모으기 결과 공개](https://finance.advenoh.pe.kr/2024년-etf-주식-계좌-vs-토스-소수점-주식-모으기/)
 * [2024년 ISA 계좌 개편안 총 정리](https://finance.advenoh.pe.kr/2024년-isa-계좌-개편안-총-정리/)
 * [2024년 글로벌 시장 전망 및 주요 일정](https://finance.advenoh.pe.kr/2024년-글로벌-시장-전망-및-주요-일정/)
 * [3분기 국내 배당주 정리](https://finance.advenoh.pe.kr/3분기-국내-배당주-정리/)
@@ -79,6 +80,6 @@ Updated 2024-12-30
 * [토스 증권에서 주식 모으기](https://finance.advenoh.pe.kr/토스-증권에서-주식-모으기/)
 * [트럼프 vs 바이든 수혜주 찾기](https://finance.advenoh.pe.kr/트럼프-vs-바이든-수혜주-찾기/)
 
-## Weekly
-* [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내,-미국-주간-주도-섹터-정리/)
+## Regularly
+* [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내-미국-주간-주도-섹터-정리/)
 
