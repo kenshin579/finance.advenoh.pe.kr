@@ -52,7 +52,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___tag) {
+      group(field: frontmatter___tags) {
         fieldValue
         totalCount
       }
@@ -66,7 +66,7 @@ export const pageQuery = graphql`
           update(formatString: "MMM DD, YYYY")
           title
           description
-          tag
+          tags
         }
       }
     }
