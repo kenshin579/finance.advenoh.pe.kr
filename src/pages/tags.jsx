@@ -79,7 +79,7 @@ const TagsPage = ({ data }) => {
           onClick={tag => {
             console.log(tag, selected)
             if (tag === selected) {
-              navigate("/tag")
+              navigate("/tags")
               alert("zz")
             } else setSelected(tag)
           }}
