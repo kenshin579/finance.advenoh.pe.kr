@@ -71,8 +71,8 @@ series: "2024년 글로벌 시장 전망 및 주요 일정"
 ## 4. 참고
 
 - [2024년 글로벌 주요 경제 이벤트 정리](https://nomadsdream.tistory.com/426)
-- [[신년특집\] 2024 증시 캘린더ㅣFOMC부터 美 대선까지, 올해 증시 일정과 이에 따른 투자 전략을 알아보자!](https://www.youtube.com/watch?v=FtmeyJHV1lc)
-- [[2024 신년특집\] 핵심 유망주 | 쳥룡의 해! 반드시 챙겨야 할 증시 빅이슈](https://www.youtube.com/watch?v=6vWgm90l6zw)
+- [신년특집 2024 증시 캘린더ㅣFOMC부터 美 대선까지, 올해 증시 일정과 이에 따른 투자 전략을 알아보자!](https://www.youtube.com/watch?v=FtmeyJHV1lc)
+- [2024 신년특집 핵심 유망주 | 쳥룡의 해! 반드시 챙겨야 할 증시 빅이슈](https://www.youtube.com/watch?v=6vWgm90l6zw)
 - [하나증권 - 월별 증시 이슈캘런더](https://www.hanaw.com/main/research/research/list.cmd?pid=2&cid=4)
 - [연간 증시캘런더](https://knowledge-lighthouse.co.kr/2024년-연간-증시캘린더증시스케쥴-증시휴장일-거래/)
 - [2024년에 예정된 일들… 글로벌 주요 이벤트 타임스케줄](https://www.g-enews.com/article/Global-Biz/2024/01/20240102081650457837926aa152_1)
