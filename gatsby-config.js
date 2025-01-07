@@ -152,7 +152,7 @@ module.exports = {
             {
               userAgent: '*',
               allow: '/',
-              disallow: ['/tags/', '/search/']
+              disallow: ['/tags/', '/tag/', '/search/']
             }
         ],
       },
@@ -207,7 +207,7 @@ module.exports = {
               }
             `,
             output: `/rss.xml`,
-            title: `RSS Feed of ${title}`,
+            title: `${title}`,
             match: "^/blog/",
           },
         ],
