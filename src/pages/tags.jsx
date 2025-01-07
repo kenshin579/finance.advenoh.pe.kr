@@ -79,7 +79,7 @@ const TagsPage = ({ data }) => {
           onClick={tag => {
             console.log(tag, selected)
             if (tag === selected) {
-              navigate("/tag")
+              navigate("/tags")
               alert("zz")
             } else setSelected(tag)
           }}
@@ -103,7 +103,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      group(field: frontmatter___tag) {
+      group(field: frontmatter___tags) {
         fieldValue
         totalCount
       }
@@ -116,7 +116,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           update(formatString: "MMM DD, YYYY")
           title
-          tag
+          tags
         }
       }
     }

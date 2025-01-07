@@ -79,7 +79,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         update(formatString: "MMMM DD, YYYY")
-        tag
+        tags
         series
       }
       fields {
