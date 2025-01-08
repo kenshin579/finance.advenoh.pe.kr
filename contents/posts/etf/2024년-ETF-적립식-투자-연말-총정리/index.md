@@ -1,8 +1,8 @@
 ---
 title: "2024년 ETF 적립식 투자 연말 총정리"
 description: "2024년 ETF 적립식 투자 연말 총정리"
-date: 2024-01-08
-update: 2024-01-08
+date: 2025-01-08
+update: 2025-01-08
 tags:
   - ETF 투자
   - 적립식 투자
