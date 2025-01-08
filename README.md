@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-01-07
+Updated 2025-01-08
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -20,6 +20,7 @@ Updated 2025-01-07
 * [인터넷으로 내용증명 작성하기](https://finance.advenoh.pe.kr/인터넷으로-내용증명-작성하기/)
 
 ## Etf
+* [2024년 ETF 적립식 투자 연말 총정리](https://finance.advenoh.pe.kr/2024년-ETF-적립식-투자-연말-총정리/)
 * [ETF 고르는 기준](https://finance.advenoh.pe.kr/etf-고르는-기준/)
 * [ETF 상장폐지가 되면 어떻게 되나?](https://finance.advenoh.pe.kr/etf-상장폐지가-되면-어떻게-되나/)
 * [ETF 상품명 이해하기](https://finance.advenoh.pe.kr/etf-상품명-이해하기/)
