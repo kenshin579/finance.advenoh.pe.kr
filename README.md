@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-01-08
+Updated 2025-01-11
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -56,6 +56,7 @@ Updated 2025-01-08
 * [금융투자소득세(금투세)에 대해서 알아보자](https://finance.advenoh.pe.kr/금융투자소득세에-대해서-알아보자/)
 * [금투자에 대해서 알아보자](https://finance.advenoh.pe.kr/금투자에-대해서-알아보자/)
 * [기대수익률에 따른 투자](https://finance.advenoh.pe.kr/기대수익률에-따른-투자/)
+* [기업의 분할은 주식에 어떤 영향을 주나?](https://finance.advenoh.pe.kr/기업의-분할은-주식에-어떤-영향을-주나/)
 * [달러 환전시 증권사 vs 은행권 어디가 좋을까요](https://finance.advenoh.pe.kr/달러-환전시-증권사-vs-은행권-어디가-좋을까요/)
 * [드러캔밀러의 투자 조언](https://finance.advenoh.pe.kr/드러켄밀러의-투자-조언/)
 * [매매사실을 꼭 공시해야하는 투자자들은 누구인가](https://finance.advenoh.pe.kr/매매사실을-꼭-공시해야하는-투자자들은-누구인가/)
