@@ -10,12 +10,6 @@ from datetime import datetime
 from itertools import islice
 
 ################################################################################################
-# todo :
-
-################################################################################################
-
-
-################################################################################################
 # Constants
 #
 ################################################################################################
@@ -38,7 +32,9 @@ class Generator:
         self.toc_map = {}
 
     def update_readme(self):
-        for file in self.__get_all_files_with_extension(BLOG_CONTENT_DIR, ['md']):
+        file_list = self.__get_all_files_with_extension(BLOG_CONTENT_DIR, ['md'])
+
+        for file in file_list:
             category = os.path.basename(os.path.dirname(os.path.dirname(file))).capitalize()
             title = self.__get_blog_title(file)
 
@@ -47,7 +43,8 @@ class Generator:
             else:
                 self.toc_map[category] = [{'title': title, 'filename': file}]
 
-        self.__write_blog_list_to_file()
+        if len(file_list) > 0:
+            self.__write_blog_list_to_file()
 
     def __get_blog_title(self, filename):
         with open(filename, 'r') as f:
