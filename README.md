@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-01-18
+Updated 2025-02-16
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -44,6 +44,8 @@ Updated 2025-01-18
 * [2024년 ISA 계좌 개편안 총 정리](https://finance.advenoh.pe.kr/2024년-isa-계좌-개편안-총-정리/)
 * [2024년 글로벌 시장 전망 및 주요 일정](https://finance.advenoh.pe.kr/2024년-글로벌-시장-전망-및-주요-일정/)
 * [2024년 연말 국내 미국 배당금 정리](https://finance.advenoh.pe.kr/2024년-연말-국내-미국-배당금-정리/)
+* [25년 2월 2째주 주간 주식 정리 - 섹터 및 주식 트렌드](https://finance.advenoh.pe.kr/25년-2월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 2월 MSCI 한국 지수서 주요 변경사항](https://finance.advenoh.pe.kr/25년-2월-MSCI-한국-지수서-주요-변경사항/)
 * [3분기 국내 배당주 정리](https://finance.advenoh.pe.kr/3분기-국내-배당주-정리/)
 * [3분기 미국 관심 배당주 정리](https://finance.advenoh.pe.kr/3분기-미국-관심-배당주-정리/)
 * [CMA의 종류](https://finance.advenoh.pe.kr/cma의-종류/)
