@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-03-02
+Updated 2025-03-03
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -44,7 +44,6 @@ Updated 2025-03-02
 * [2024년 ISA 계좌 개편안 총 정리](https://finance.advenoh.pe.kr/2024년-isa-계좌-개편안-총-정리/)
 * [2024년 글로벌 시장 전망 및 주요 일정](https://finance.advenoh.pe.kr/2024년-글로벌-시장-전망-및-주요-일정/)
 * [2024년 연말 국내 미국 배당금 정리](https://finance.advenoh.pe.kr/2024년-연말-국내-미국-배당금-정리/)
-* [25년 2월 2째주 주간 주식 정리 - 섹터 및 주식 트렌드](https://finance.advenoh.pe.kr/25년-2월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
 * [25년 2월 MSCI 한국 지수서 주요 변경사항](https://finance.advenoh.pe.kr/25년-2월-msci-한국-지수서-주요-변경사항/)
 * [3분기 국내 배당주 정리](https://finance.advenoh.pe.kr/3분기-국내-배당주-정리/)
 * [3분기 미국 관심 배당주 정리](https://finance.advenoh.pe.kr/3분기-미국-관심-배당주-정리/)
@@ -65,6 +64,7 @@ Updated 2025-03-02
 * [무상증자는 주식에 어떤 영향을 미치나](https://finance.advenoh.pe.kr/무상증자는-주식에-어떤-영향을-미치나/)
 * [미국 3대 주가 지수](https://finance.advenoh.pe.kr/미국-3대-지수-차이점/)
 * [미래에셋에서 매매수익률 확인하는 방법](https://finance.advenoh.pe.kr/미래에셋에서-매매수익률-확인하는-방법/)
+* [복수 거래소 시대 NXT 도입에 따른 변화](https://finance.advenoh.pe.kr/복수-거래소-시대-nxt-도입에-따른-변화/)
 * [서킷브레이커 vs 사이드카의 차이, 주가지수 폭락 시 작동하는 장치](https://finance.advenoh.pe.kr/서킷브레이커-vs-사이드카의-차이-주가지수-폭락-시-작동하는-장치/)
 * [성장주와 가치주의 차이점](https://finance.advenoh.pe.kr/성장주와-가치주의-차이점/)
 * [액면분할이란](https://finance.advenoh.pe.kr/액면분할이란/)
@@ -88,4 +88,6 @@ Updated 2025-03-02
 
 ## Regularly
 * [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내-미국-주간-주도-섹터-정리/)
+* [25년 2월 2째주 주간 주식 정리 - 섹터 및 주식 트렌드](https://finance.advenoh.pe.kr/25년-2월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
 
