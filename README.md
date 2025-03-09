@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-03-03
+Updated 2025-03-09
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -90,4 +90,5 @@ Updated 2025-03-03
 * [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내-미국-주간-주도-섹터-정리/)
 * [25년 2월 2째주 주간 주식 정리 - 섹터 및 주식 트렌드](https://finance.advenoh.pe.kr/25년-2월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
 * [25년 3월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 2째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
 
