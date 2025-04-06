@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-03-31
+Updated 2025-04-05
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -86,6 +86,7 @@ Updated 2025-03-31
 * [카카오뱅크 달러박스 달러 ATM에서 출금하기](https://finance.advenoh.pe.kr/카카오뱅크-달러박스-달러-ATM에서-출금하기/)
 * [토스 증권에서 주식 모으기](https://finance.advenoh.pe.kr/토스-증권에서-주식-모으기/)
 * [트럼프 vs 바이든 수혜주 찾기](https://finance.advenoh.pe.kr/트럼프-vs-바이든-수혜주-찾기/)
+* [해외주식 양도소득세 신고 대행 서비스 신청 방법 완벽 정리!](https://finance.advenoh.pe.kr/해외주식-양도소득세-신고-대행-서비스-신청-방법-완벽-정리/)
 
 ## Regularly
 * [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내-미국-주간-주도-섹터-정리/)
