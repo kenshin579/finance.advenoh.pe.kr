@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-04-07
+Updated 2025-04-14
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -51,6 +51,7 @@ Updated 2025-04-07
 * [CPI와 PPI의 차이점](https://finance.advenoh.pe.kr/cpi와-ppi의-차이점/)
 * [TDF에 대해서 알아보자](https://finance.advenoh.pe.kr/tdf-에-대해서-알아보자/)
 * [경기침체 징조는 어떻게 판단하나](https://finance.advenoh.pe.kr/경기침체-징조는-어떻게-판단하나/)
+* [공매도란? 대차거래부터 개인투자자 영향까지 완벽 정리](https://finance.advenoh.pe.kr/공매도란-대차거래부터-개인투자자-영향까지-완벽-정리/)
 * [금리, 환율, 채권, 주가 서로간의 상관관계](https://finance.advenoh.pe.kr/금리-환율-채권-주가-서로간의-상관관계/)
 * [금리인하 수혜주 : 유망 종목과 투자 전략](https://finance.advenoh.pe.kr/금리인하-수혜주-유망-종목과-투자-전략/)
 * [금융소득 종합과세 대상자 피하는 방법](https://finance.advenoh.pe.kr/금융소득-종합과세-대상자-피하는-방법/)
@@ -97,4 +98,5 @@ Updated 2025-04-07
 * [25년 3월 4째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-4째주-주간-주식-정리-섹터-및-주식-트렌드/)
 * [25년 4월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
 * [25년 4월 2째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 4월 3째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-3째주-주간-주식-정리-섹터-및-주식-트렌드/)
 
