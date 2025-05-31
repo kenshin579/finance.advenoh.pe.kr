@@ -2,19 +2,5 @@
   publish = "public"
   command = "gatsby clean && gatsby build"
 
-[build.environment]
-  NODE_VERSION = "18"
-
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
-
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
-
-# Cache configuration
-[build.cache]
-  paths = [
-    ".cache",
-    "public",
-    "node_modules/.cache"
-  ]
