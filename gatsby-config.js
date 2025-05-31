@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
