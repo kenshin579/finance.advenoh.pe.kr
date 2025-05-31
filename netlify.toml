@@ -3,7 +3,4 @@
   command = "gatsby clean && gatsby build"
 
 [[plugins]]
-  package = "gatsby-plugin-netlify"
-
-[[plugins]]
   package = "@netlify/plugin-lighthouse"
