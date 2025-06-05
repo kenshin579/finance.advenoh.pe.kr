@@ -11,6 +11,8 @@ import VerticalSpace from "components/VerticalSpace"
 import Tab from "components/Tab"
 
 import { title, description, siteUrl } from "../../blog-config"
+import Analytics from "../components/GoogleAnalytics";
+import Adsense from "../components/GoogleAdsense";
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -28,7 +30,9 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
+      <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
+      <Adsense />
       <VerticalSpace size={48} />
       <Bio />
       <Tab postsCount={posts.length} activeTab="posts" />
