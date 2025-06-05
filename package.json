@@ -6,11 +6,11 @@
   "version": "0.2.0",
   "author": "Hudi",
   "dependencies": {
+    "@giscus/react": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.11.0",
     "gatsby-image": "^2.4.21",
-    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-catch-links": "^5.11.0",
     "gatsby-plugin-feed": "^5.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -40,7 +40,6 @@
     "prop-types": "^15.8.1",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
-    "react-adsense": "^0.1.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
@@ -51,8 +50,7 @@
     "redux": "^4.2.1",
     "sharp": "^0.32.1",
     "styled-components": "^5.2.1",
-    "styled-reset": "^4.4.7",
-    "utterances-react-component": "^1.0.0"
+    "styled-reset": "^4.4.7"
   },
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",

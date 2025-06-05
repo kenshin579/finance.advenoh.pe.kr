@@ -7,12 +7,10 @@ import SEO from "components/SEO"
 import Bio from "components/Bio"
 import PostList from "components/PostList"
 import SideTagList from "components/SideTagList"
-import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
+import Tab from "components/Tab"
 
 import { title, description, siteUrl } from "../../blog-config"
-import Analytics from "../components/GoogleAnalytics";
-import Adsense from "../components/GoogleAdsense";
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -30,12 +28,10 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
-      <Adsense />
       <VerticalSpace size={48} />
       <Bio />
-      <Divider />
+      <Tab postsCount={posts.length} activeTab="posts" />
       <SideTagList tags={tags} postCount={posts.length} />
       <PostList postList={posts} />
     </Layout>
@@ -51,7 +47,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/contents/posts/" } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
@@ -65,7 +64,6 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           update(formatString: "MMM DD, YYYY")
           title
-          description
           tags
         }
       }

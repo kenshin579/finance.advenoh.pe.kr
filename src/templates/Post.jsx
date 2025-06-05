@@ -6,8 +6,6 @@ import Layout from "components/Layout"
 import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
-import Analytics from "../components/GoogleAnalytics";
-import Adsense from "../components/GoogleAdsense";
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
@@ -36,10 +34,8 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <Analytics />
       <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
       <Article>
-        <Adsense />
         <Article.Header
           title={title}
           date={date}

@@ -5,7 +5,6 @@ import Layout from "components/Layout"
 import SEO from "components/SEO"
 
 import { title, description, siteUrl } from "../../blog-config"
-import Analytics from "../components/GoogleAnalytics";
 
 const NotFound = styled.div`
   height: 800px;
@@ -33,7 +32,6 @@ const NotFound = styled.div`
 
 const NotFoundPage = () => (
   <Layout>
-    <Analytics />
     <SEO title={title} description={description} url={siteUrl} />
     <NotFound>
       <h2>404 ERROR</h2>
