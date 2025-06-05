@@ -11,7 +11,20 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://finance.advenoh.pe.kr/',
+        sitemap: 'https://finance.advenoh.pe.kr/sitemap.xml',
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+            disallow: ['/tags/', '/search/']
+          }
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
