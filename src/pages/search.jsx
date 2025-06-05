@@ -10,8 +10,6 @@ import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
-import Analytics from "../components/GoogleAnalytics";
-import Adsense from "../components/GoogleAdsense";
 
 const SearchWrapper = styled.div`
   margin-top: 20px;
@@ -40,9 +38,7 @@ const Search = ({ data }) => {
 
   return (
     <Layout>
-      <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
-      <Adsense />
       <SearchWrapper>
         <Title size="sm">
           There are {filteredPosts.length} post{filteredPosts.length > 1 && "s"}
@@ -63,7 +59,10 @@ export default Search
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/contents/posts/" } }
+    ) {
       nodes {
         excerpt(pruneLength: 200, truncate: true)
         fields {

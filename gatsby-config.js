@@ -58,7 +58,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/contents/posts`,
+        path: `${__dirname}/contents`,
       },
     },
     {
@@ -142,21 +142,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://blog.advenoh.pe.kr/',
-        sitemap: 'https://blog.advenoh.pe.kr/sitemap.xml',
-        policy: [
-          {
-            userAgent: '*',
-            allow: '/',
-            disallow: ['/tags/', '/search/']
-          }
-        ],
-      },
-    },
     `gatsby-plugin-resolve-src`,
     `gatsby-plugin-sitemap`,
     {
@@ -191,6 +176,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { fileAbsolutePath: { regex: "/contents/posts/" } },
                 ) {
                   edges {
                     node {

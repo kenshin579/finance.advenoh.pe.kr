@@ -12,8 +12,6 @@ import VerticleSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
 
 import { title, description, siteUrl } from "../../blog-config"
-import Analytics from "../components/GoogleAnalytics";
-import Adsense from "../components/GoogleAdsense";
 
 const TagListWrapper = styled.div`
   margin-top: 20px;
@@ -40,9 +38,7 @@ const SeriesPage = ({ data }) => {
 
   return (
     <Layout>
-      <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
-      <Adsense />
 
       <TagListWrapper>
         {series.length > 0 && (
@@ -68,7 +64,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/contents/posts/" } }
+    ) {
       group(field: frontmatter___tags) {
         fieldValue
         totalCount
