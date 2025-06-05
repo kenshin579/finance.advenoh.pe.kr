@@ -58,8 +58,8 @@ const TagsPage = ({ data }) => {
     <Layout>
       <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
-
       <Adsense />
+
       <TagListWrapper>
         {selected ? (
           <Title size="sm">

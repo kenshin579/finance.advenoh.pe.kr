@@ -38,8 +38,8 @@ const Post = ({ data }) => {
     <Layout>
       <Analytics />
       <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
-      <Adsense />
       <Article>
+        <Adsense />
         <Article.Header
           title={title}
           date={date}

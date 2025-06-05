@@ -43,6 +43,7 @@ const SeriesPage = ({ data }) => {
       <Analytics />
       <SEO title={title} description={description} url={siteUrl} />
       <Adsense />
+
       <TagListWrapper>
         {series.length > 0 && (
           <Title size="sm">There are {series.length} series.</Title>

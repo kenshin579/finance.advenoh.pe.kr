@@ -55,9 +55,7 @@
     "utterances-react-component": "^1.0.0"
   },
   "devDependencies": {
-    "@netlify/plugin-lighthouse": "^6.0.1",
     "eslint-config-react-app": "^7.0.1",
-    "gatsby-plugin-netlify": "^5.1.1",
     "gh-pages": "^5.0.0",
     "prettier": "2.8.8"
   },
@@ -85,9 +83,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kenshin579/finance.advenoh.pe.kr"
+    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
   },
   "bugs": {
-    "url": "https://github.com/kenshin579/finance.advenoh.pe.kr"
+    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
   }
 }

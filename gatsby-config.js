@@ -12,7 +12,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
@@ -147,14 +146,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://finance.advenoh.pe.kr/',
-        sitemap: 'https://finance.advenoh.pe.kr/sitemap.xml',
+        host: 'https://blog.advenoh.pe.kr/',
+        sitemap: 'https://blog.advenoh.pe.kr/sitemap.xml',
         policy: [
-            {
-              userAgent: '*',
-              allow: '/',
-              disallow: ['/tags/', '/search/']
-            }
+          {
+            userAgent: '*',
+            allow: '/',
+            disallow: ['/tags/', '/search/']
+          }
         ],
       },
     },
