@@ -1,171 +1,107 @@
-<h1 align="center">
-    gatsby-starter-hoodie
-</h1>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/31252276-e050-4409-8cdb-8db50d01fb8e/deploy-status)](https://app.netlify.com/sites/advenoh-finance/deploys)
 
-<h4 align="center">
-  A gatsby starter developed for developers to build tech blogs.
-</h4>
+# Frank's Finance Blog - Table of Contents
 
-![](mockup.png)
+Updated 2025-06-05
 
-> gatsby-starter-hoodie has been migrated to **Gatsby 5** as of 2023-06-30. gatsby-starter-hoodie is now available for **node.js 20**.
+현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
-## 🚀 About gatsby-starter-hoodie
+## Appendix
+* [자산 운용사 약어 모음](https://finance.advenoh.pe.kr/자산-운용사-약어-모음/)
+* [투자 명언](https://finance.advenoh.pe.kr/투자-명언/)
+* [투자 용어 (Investment Terms)](https://finance.advenoh.pe.kr/투자-용어/)
 
-[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/main/README-kr.md)
+## Blog
+* [Gatsby 블로그 구글 검색에 더 많이 노출하는 방법](https://finance.advenoh.pe.kr/gatsby-블로그-구글-검색에-더-많이-노출하는-방법/)
+* [구글 Adsense 미국 세금 정보 입력하는 방법](https://finance.advenoh.pe.kr/구글-adsense-미국-세금-정보-입력하는-방법/)
+* [구글 Adsense 싱가포르 세금 정보 제출방법](https://finance.advenoh.pe.kr/구글-adsense-싱가포르-세금-정보-제출방법/)
+* [구글 Adsense 에 결제 추가하는 방법](https://finance.advenoh.pe.kr/구글-adsense-에-결제-추가하는-방법/)
+* [구글 Adsense에 필요한 거주자증명서 발급 신청하는 방법](https://finance.advenoh.pe.kr/구글-adsense에-필요한-거주자증명서-발급-신청하는-방법/)
+* [인터넷으로 내용증명 작성하기](https://finance.advenoh.pe.kr/인터넷으로-내용증명-작성하기/)
 
-gatsby-starter-hoodie is a gatsby starter created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
+## Etf
+* [2024년 ETF 적립식 투자 연말 총정리](https://finance.advenoh.pe.kr/2024년-etf-적립식-투자-연말-총정리/)
+* [ETF 고르는 기준](https://finance.advenoh.pe.kr/etf-고르는-기준/)
+* [ETF 상장폐지가 되면 어떻게 되나?](https://finance.advenoh.pe.kr/etf-상장폐지가-되면-어떻게-되나/)
+* [ETF 상품명 이해하기](https://finance.advenoh.pe.kr/etf-상품명-이해하기/)
+* [ETF 세금 총정리](https://finance.advenoh.pe.kr/etf-세금-총정리/)
+* [IRP에서 안전자산 ETF는 어떤 것들이 있나](https://finance.advenoh.pe.kr/irp에서-안전자산-etf는-어떤-것들이-있나/)
+* [국내 미국다우존스 ETF 중에서 어떤 것을 선택하면 좋을까?](https://finance.advenoh.pe.kr/국내-미국다우존스-etf중에서-어떤-것을-선택하면-좋을까/)
+* [금리인하시 환노출, 환헤지 어느 ETF 상품이 더 유리할까?](https://finance.advenoh.pe.kr/금리인하시-환노출-환헤지-어느-etf-상품이-더-유리할까/)
+* [나만의 ETF 적립식 투자](https://finance.advenoh.pe.kr/나만의-etf-적립식-투자/)
+* [만기매칭형 ETF란](https://finance.advenoh.pe.kr/만기매칭형-etf란/)
+* [주식/ETF 종목 매매 타이밍 전략 정리](https://finance.advenoh.pe.kr/주식-etf-종목-매매-타이밍-전략-정리/)
 
-Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
+## Finance
+* [2024년 1분기 주요 일정](https://finance.advenoh.pe.kr/2024년-1분기-주요-일정/)
+* [2024년 2분기 빌 아크만 포트폴리오](https://finance.advenoh.pe.kr/2024년-2분기-빌-아크만-포트폴리오/)
+* [2024년 2분기 스탠리 드러켄밀러 포트폴리오](https://finance.advenoh.pe.kr/2024년-2분기-스탠리-드러켄밀러-포트폴리오/)
+* [2024년 2분기 워렌 버핏 포트폴리오](https://finance.advenoh.pe.kr/2024년-2분기-워렌-버핏-포트폴리오/)
+* [2024년 2분기 주요 일정](https://finance.advenoh.pe.kr/2024년-2분기-주요-일정/)
+* [2024년 3분기 주요 일정](https://finance.advenoh.pe.kr/2024년-3분기-주요-일정/)
+* [2024년 4분기 주요 이벤트](https://finance.advenoh.pe.kr/2024년-4분기-주요-일정/)
+* [2024년 ETF 주식 계좌 vs 토스 소수점 주식 모으기 결과 공개](https://finance.advenoh.pe.kr/2024년-etf-주식-계좌-vs-토스-소수점-주식-모으기/)
+* [2024년 ISA 계좌 개편안 총 정리](https://finance.advenoh.pe.kr/2024년-isa-계좌-개편안-총-정리/)
+* [2024년 글로벌 시장 전망 및 주요 일정](https://finance.advenoh.pe.kr/2024년-글로벌-시장-전망-및-주요-일정/)
+* [2024년 연말 국내 미국 배당금 정리](https://finance.advenoh.pe.kr/2024년-연말-국내-미국-배당금-정리/)
+* [25년 2월 MSCI 한국 지수서 주요 변경사항](https://finance.advenoh.pe.kr/25년-2월-msci-한국-지수서-주요-변경사항/)
+* [3분기 국내 배당주 정리](https://finance.advenoh.pe.kr/3분기-국내-배당주-정리/)
+* [3분기 미국 관심 배당주 정리](https://finance.advenoh.pe.kr/3분기-미국-관심-배당주-정리/)
+* [CMA의 종류](https://finance.advenoh.pe.kr/cma의-종류/)
+* [CPI와 PPI의 차이점](https://finance.advenoh.pe.kr/cpi와-ppi의-차이점/)
+* [ISA 만기, 연장할까 해지할까? 꼭 알아야 할 선택 가이드](https://finance.advenoh.pe.kr/isa-만기-연장할까-해지할까-꼭-알아야-할-선택-가이드/)
+* [TDF에 대해서 알아보자](https://finance.advenoh.pe.kr/tdf-에-대해서-알아보자/)
+* [경기침체 징조는 어떻게 판단하나](https://finance.advenoh.pe.kr/경기침체-징조는-어떻게-판단하나/)
+* [공매도란? 대차거래부터 개인투자자 영향까지 완벽 정리](https://finance.advenoh.pe.kr/공매도란-대차거래부터-개인투자자-영향까지-완벽-정리/)
+* [금리, 환율, 채권, 주가 서로간의 상관관계](https://finance.advenoh.pe.kr/금리-환율-채권-주가-서로간의-상관관계/)
+* [금리인하 수혜주 : 유망 종목과 투자 전략](https://finance.advenoh.pe.kr/금리인하-수혜주-유망-종목과-투자-전략/)
+* [금융소득 종합과세 대상자 피하는 방법](https://finance.advenoh.pe.kr/금융소득-종합과세-대상자-피하는-방법/)
+* [금융투자소득세(금투세)에 대해서 알아보자](https://finance.advenoh.pe.kr/금융투자소득세에-대해서-알아보자/)
+* [금투자에 대해서 알아보자](https://finance.advenoh.pe.kr/금투자에-대해서-알아보자/)
+* [기대수익률에 따른 투자](https://finance.advenoh.pe.kr/기대수익률에-따른-투자/)
+* [기업의 분할은 주식에 어떤 영향을 주나?](https://finance.advenoh.pe.kr/기업의-분할은-주식에-어떤-영향을-주나/)
+* [달러 환전시 증권사 vs 은행권 어디가 좋을까요](https://finance.advenoh.pe.kr/달러-환전시-증권사-vs-은행권-어디가-좋을까요/)
+* [드러캔밀러의 투자 조언](https://finance.advenoh.pe.kr/드러켄밀러의-투자-조언/)
+* [매매사실을 꼭 공시해야하는 투자자들은 누구인가](https://finance.advenoh.pe.kr/매매사실을-꼭-공시해야하는-투자자들은-누구인가/)
+* [무상증자는 주식에 어떤 영향을 미치나](https://finance.advenoh.pe.kr/무상증자는-주식에-어떤-영향을-미치나/)
+* [미국 3대 주가 지수](https://finance.advenoh.pe.kr/미국-3대-지수-차이점/)
+* [미국 한국 주식시장 연속 상승과 하락은 몇 주까지 가능할까](https://finance.advenoh.pe.kr/미국 한국 주식시장 연속 상승과 하락은 몇 주까지 가능할까/)
+* [미래에셋에서 매매수익률 확인하는 방법](https://finance.advenoh.pe.kr/미래에셋에서-매매수익률-확인하는-방법/)
+* [복수 거래소 시대 NXT 도입에 따른 변화](https://finance.advenoh.pe.kr/복수-거래소-시대-nxt-도입에-따른-변화/)
+* [서킷브레이커 vs 사이드카의 차이, 주가지수 폭락 시 작동하는 장치](https://finance.advenoh.pe.kr/서킷브레이커-vs-사이드카의-차이-주가지수-폭락-시-작동하는-장치/)
+* [성장주와 가치주의 차이점](https://finance.advenoh.pe.kr/성장주와-가치주의-차이점/)
+* [액면분할이란](https://finance.advenoh.pe.kr/액면분할이란/)
+* [연금계좌 납입금액 확인하는 방법](https://finance.advenoh.pe.kr/연금계좌-납입금액-확인하는-방법/)
+* [연금저축에서 MMF 단기 상품 매매하는 방법](https://finance.advenoh.pe.kr/연금저축에서-mmf-단기-상품-매매하는-방법/)
+* [연금저축이란?](https://finance.advenoh.pe.kr/연금저축이란/)
+* [월별 투자 금액 확인하는 방법](https://finance.advenoh.pe.kr/월별-투자-금액-확인하는-방법/)
+* [유상증자는 주식에 어떤 영향을 주나](https://finance.advenoh.pe.kr/유상증자는-주식에-어떤-영향을-주나/)
+* [자사주 매입이란](https://finance.advenoh.pe.kr/자사주-매입이란/)
+* [주식 고수가 되는 HTS 활용법! 필수 화면 & 사용 패턴 정리](https://finance.advenoh.pe.kr/주식-고수가-되는-hts-활용법-필수-화면-사용-패턴-정리/)
+* [주식 대가들의 포트폴리오 확인하는 방법](https://finance.advenoh.pe.kr/주식-대가들의-포트폴리오-확인하는-방법/)
+* [주식 세금 종류](https://finance.advenoh.pe.kr/주식-세금-종류/)
+* [주식 시장 개장시간 정리](https://finance.advenoh.pe.kr/주식-시장-개장시간-정리/)
+* [주식으로 2주마다 월세 받는 방법](https://finance.advenoh.pe.kr/주식으로-2주마다-월세-받는-방법/)
+* [증권 계좌 종류별로 투자 가능한 항목 정리](https://finance.advenoh.pe.kr/증권-계좌-종류별로-투자-가능한-항목-정리/)
+* [증권계좌별로 어떤 주식을 매매하면 좋을까?](https://finance.advenoh.pe.kr/증권계좌별로-어떤-주식을-매매하면-좋을까/)
+* [차트에서 매매내역 표시하는 방법](https://finance.advenoh.pe.kr/차트에서-매매내역-표시하는-방법/)
+* [침체, 인플레이션, 국가부채, 양적완화, 빈부격차 상관 관계](https://finance.advenoh.pe.kr/침체-인플레이션-국가부채-양적완화-빈부격차-상관-관계/)
+* [카카오뱅크 달러박스 달러 ATM에서 출금하기](https://finance.advenoh.pe.kr/카카오뱅크-달러박스-달러-ATM에서-출금하기/)
+* [토스 증권에서 주식 모으기](https://finance.advenoh.pe.kr/토스-증권에서-주식-모으기/)
+* [트럼프 vs 바이든 수혜주 찾기](https://finance.advenoh.pe.kr/트럼프-vs-바이든-수혜주-찾기/)
+* [해외주식 양도소득세 신고 대행 서비스 신청 방법 완벽 정리!](https://finance.advenoh.pe.kr/해외주식-양도소득세-신고-대행-서비스-신청-방법-완벽-정리/)
 
-This project inspired by [velog](https://velog.io).
+## Regularly
+* [2024년 6월 2주차 - 국내, 미국 주간 주도 섹터 정리](https://finance.advenoh.pe.kr/2024년-6월-2주차-국내-미국-주간-주도-섹터-정리/)
+* [25년 2월 2째주 주간 주식 정리 - 섹터 및 주식 트렌드](https://finance.advenoh.pe.kr/25년-2월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 2째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 3째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-3째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 3월 4째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-3월-4째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 4월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 4월 2째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 4월 3째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-4월-3째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 5월 1째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-5월-1째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 5월 2째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-5월-2째주-주간-주식-정리-섹터-및-주식-트렌드/)
+* [25년 5월 5째주 주간 주식 정리 - 섹터 및 주식 트랜드](https://finance.advenoh.pe.kr/25년-5월-5째주-주간-주식-정리-섹터-및-주식-트렌드/)
 
-## [Live Demo](https://gatsby-starter-hoodie.netlify.app)
-
-## Features
-
-- Markdown
-- Code Highlighting
-- Katex Syntax
-- Dark Mode (Responsive to the settings of the OS)
-- Tag Categoriazation
-- Series Categorization
-- Responsive Web
-- SEO
-- Giscus
-
-Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
-
-## 1. Create a Gatsby site
-
-> Make sure you have **node.js** and **gatsby-cli** installed on your computer.
-
-```
-$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
-```
-
-## 2. Start dev server
-
-```
-$ cd my-hoodie-blog
-$ npm run start
-```
-
-Now you can access to your blog at localhost:8000.
-
-## 3. Create your own Github repository
-
-Giscus comment widget is based on **Github Discuss system**. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.
-
-If you don't know how to create a GitHub repository, follow the [official GitHub documentation](https://docs.github.com/en/github/getting-started-with-github/create-a-repo).
-
-### Add remote repository
-
-```
-git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}
-```
-
-## 4. Write blog-config.js
-
-```javascript
-module.exports = {
-  title: "MY BLOG",
-  description: "Hello, This is my blog",
-  author: "YOUR NAME",
-  siteUrl: "https://myblog.com",
-  links: {
-    github: "https://github.com",
-    facebook: "https://www.facebook.com",
-    instagram: "https://www.instagram.com",
-    etc: "https://www.google.com/",
-  },
-  giscus: {
-    repo: "{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}",
-    repoId: "{YOUR_GITHUB_REPOSITORY_ID}",
-    category: "{YOUR_GITHUB_REPOSITORY_CATEGORY}",
-    categoryId: "{YOUR_GITHUB_REPOSITORY_CATEGORY_ID}",
-    mapping: "pathname",
-    strict: "0",
-    reactionsEnabled: "1",
-    inputPosition: "bottom",
-    lang: "en",
-  },
-}
-```
-
-gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and giscus. Configure `blog-config.js` to suit your blog.
-
-## 5. Add your content
-
-Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://hoodie.gatsbyjs.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
-
-## 6. Deploy your blog
-
-### 6-1 via Netlify
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/alxshelepenok/gatsby-starter-lumen" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-Follow the Connecting to Netlify steps in [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/). It's not difficult.
-
-If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.
-
-### 6-2. via Github Pages
-
-#### Case 1
-
-If the repository name is in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
-
-```
-$ npm run deploy-gh
-```
-
-#### Case 2
-
-If the repository name is not in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
-
-```
-$ npm run deploy-gh-prefix-paths
-```
-
-In the above case, you need to change `pathPrefix` in `gatsby-config.js` to your repository name.
-
-### 6-3. other platforms
-
-```
-$ npm run build
-```
-
-You can build the gatsby website with the command above. The build output is created in the `/public` directory. Deploy the `/public` directory using the command for the platform you want to deploy.
-
-## 7. Cutomize
-
-### Project Structure
-
-You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.
-
-```
-├── node_modules
-├── contents
-│   └── posts // your articles are here
-├── public // build outputs are here
-└── src
-    ├── assets
-    │   └── theme // theme config is here
-    ├── components
-    │   └── Article
-    │       └── Body
-    │           └── StyledMarkdown
-    │               └── index.jsx // markdown styles are here
-    │   ...
-    ├── fonts // webfonts are here
-    ├── hooks
-    ├── images
-    ├── pages // page components are here
-    ├── reducers
-    ├── templates // post components are here
-    └── utils
-```
-
-## Star History 🌟
-
-[![Star History Chart](https://api.star-history.com/svg?repos=devHudi/gatsby-starter-hoodie&type=Date)](https://star-history.com/#devHudi/gatsby-starter-hoodie&Date)
