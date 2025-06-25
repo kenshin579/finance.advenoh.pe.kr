@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
+
+    <changeSet id="002-1" author="ipo-blog-system">
+        <comment>Add index on ipo_info.company_name for search performance</comment>
+        <createIndex tableName="ipo_info" indexName="idx_company_name">
+            <column name="company_name"/>
+        </createIndex>
+        
+        <rollback>
+            <dropIndex tableName="ipo_info" indexName="idx_company_name"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="002-2" author="ipo-blog-system">
+        <comment>Add index on financial_info.year for filtering</comment>
+        <createIndex tableName="financial_info" indexName="idx_financial_year">
+            <column name="year"/>
+        </createIndex>
+        
+        <rollback>
+            <dropIndex tableName="financial_info" indexName="idx_financial_year"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="002-3" author="ipo-blog-system">
+        <comment>Add index on offering_info dates for filtering</comment>
+        <createIndex tableName="offering_info" indexName="idx_subscription_date">
+            <column name="subscription_date"/>
+        </createIndex>
+        
+        <createIndex tableName="offering_info" indexName="idx_listing_date">
+            <column name="listing_date"/>
+        </createIndex>
+        
+        <rollback>
+            <dropIndex tableName="offering_info" indexName="idx_subscription_date"/>
+            <dropIndex tableName="offering_info" indexName="idx_listing_date"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="002-4" author="ipo-blog-system">
+        <comment>Add index on news_info for sorting and filtering</comment>
+        <createIndex tableName="news_info" indexName="idx_published_date">
+            <column name="published_date"/>
+        </createIndex>
+        
+        <createIndex tableName="news_info" indexName="idx_sentiment">
+            <column name="sentiment"/>
+        </createIndex>
+        
+        <rollback>
+            <dropIndex tableName="news_info" indexName="idx_published_date"/>
+            <dropIndex tableName="news_info" indexName="idx_sentiment"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet id="002-5" author="ipo-blog-system">
+        <comment>Add index on posting_history for recent posts</comment>
+        <createIndex tableName="posting_history" indexName="idx_created_at">
+            <column name="created_at"/>
+        </createIndex>
+        
+        <createIndex tableName="posting_history" indexName="idx_status">
+            <column name="status"/>
+        </createIndex>
+        
+        <rollback>
+            <dropIndex tableName="posting_history" indexName="idx_created_at"/>
+            <dropIndex tableName="posting_history" indexName="idx_status"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog> 

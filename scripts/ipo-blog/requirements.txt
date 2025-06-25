@@ -1,0 +1,23 @@
+# Web Scraping
+beautifulsoup4==4.12.3
+requests==2.32.3
+lxml==5.2.2
+urllib3==2.2.2
+
+# Database
+mysql-connector-python==8.3.0
+
+# Data Processing
+pandas==2.2.2
+python-dateutil==2.9.0
+
+# API and Configuration
+openai==1.35.3
+python-dotenv==1.0.1
+
+# Visualization
+plotly==5.22.0
+kaleido==0.2.1  # For saving plotly charts as images
+
+# Utilities
+typing-extensions==4.12.2 
