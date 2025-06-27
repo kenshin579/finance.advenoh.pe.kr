@@ -122,27 +122,43 @@ class NaverScraper(BaseScraper):
                         continue
                     
                     title = title_elem.text.strip()
-                    # Get the text after the title element
-                    value_text = li.text.replace(title, '').strip()
                     
                     # Handle special cases for values
                     if title == '공모가':
                         # Extract price from span if exists
                         price_span = li.find('span', {'class': 'num'})
-                        ipo_info['offering_price'] = price_span.text.strip() if price_span else value_text
+                        ipo_info['offering_price'] = price_span.text.strip() if price_span else li.text.replace(title, '').strip()
                     elif title == '업종':
-                        ipo_info['industry'] = value_text
+                        # Get only direct text content, not from nested elements
+                        value = ''.join([str(x) for x in li.contents if isinstance(x, str)])
+                        ipo_info['industry'] = value.replace(title, '').strip()
                     elif title == '주관사':
-                        ipo_info['underwriters'] = value_text
+                        # Get only direct text content
+                        value = ''.join([str(x) for x in li.contents if isinstance(x, str)])
+                        ipo_info['underwriters'] = value.replace(title, '').strip()
                     elif title == '진행상태':
-                        # Remove button text if exists
-                        ipo_info['status'] = value_text.replace('팁', '').strip()
+                        # Extract only the direct text, excluding nested elements like buttons or tooltips
+                        # Find all direct text nodes
+                        texts = []
+                        for content in li.contents:
+                            if isinstance(content, str):
+                                texts.append(content.strip())
+                            elif hasattr(content, 'name') and content.name not in ['button', 'div', 'span']:
+                                # Get text from non-button/div/span elements
+                                if hasattr(content, 'string') and content.string:
+                                    texts.append(content.string.strip())
+                        
+                        status_text = ' '.join(texts).replace(title, '').strip()
+                        # Clean up any remaining whitespace
+                        status_text = ' '.join(status_text.split())
+                        ipo_info['status'] = status_text
                     elif title == '개인청약':
                         # Extract date from span if exists
                         date_span = li.find('span', {'class': 'num'})
-                        ipo_info['subscription_date'] = date_span.text.strip() if date_span else value_text
+                        ipo_info['subscription_date'] = date_span.text.strip() if date_span else li.text.replace(title, '').strip()
                     elif title == '상장일':
-                        ipo_info['listing_date'] = value_text
+                        value = ''.join([str(x) for x in li.contents if isinstance(x, str)])
+                        ipo_info['listing_date'] = value.replace(title, '').strip()
                 
                 # Set default values for missing fields
                 ipo_info.setdefault('offering_amount', None)
@@ -151,7 +167,14 @@ class NaverScraper(BaseScraper):
                 
                 # Filter by target underwriters
                 if self._is_target_underwriter(ipo_info['underwriters']):
-                    logger.info(f"Found IPO: {company_name} ({stock_code}) - Underwriters: {ipo_info['underwriters']}")
+                    logger.info(f"Found IPO: {company_name} ({stock_code})")
+                    logger.info(f"  - Market: {ipo_info.get('market_type', 'N/A')}")
+                    logger.info(f"  - Industry: {ipo_info.get('industry', 'N/A')}")
+                    logger.info(f"  - Underwriters: {ipo_info['underwriters']}")
+                    logger.info(f"  - Status: {ipo_info.get('status', 'N/A')}")
+                    logger.info(f"  - Offering Price: {ipo_info.get('offering_price', 'N/A')}")
+                    logger.info(f"  - Subscription Date: {ipo_info.get('subscription_date', 'N/A')}")
+                    logger.info(f"  - Listing Date: {ipo_info.get('listing_date', 'N/A')}")
                     ipo_list.append(ipo_info)
                 else:
                     logger.debug(f"Skipping IPO: {company_name} - Underwriters: {ipo_info['underwriters']}")
