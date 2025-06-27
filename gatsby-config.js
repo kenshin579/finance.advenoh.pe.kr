@@ -15,7 +15,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://finance.advenoh.pe.kr/',
-        sitemap: 'https://finance.advenoh.pe.kr/sitemap-index.xml',
+        sitemap: 'https://finance.advenoh.pe.kr/sitemap-0.xml',
         policy: [
           {
             userAgent: '*',
