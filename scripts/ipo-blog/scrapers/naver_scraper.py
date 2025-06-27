@@ -67,55 +67,87 @@ class NaverScraper(BaseScraper):
         
         ipo_list = []
         
-        # Find the IPO table
-        table = soup.find('table', {'class': 'type_1'})
-        if not table:
-            logger.error("IPO table not found")
+        # Find all IPO items (new div structure)
+        ipo_items = soup.find_all('div', {'class': 'item_area'})
+        
+        if not ipo_items:
+            logger.error("No IPO items found")
             return []
         
-        # Get all rows except header
-        rows = table.find_all('tr')
+        logger.info(f"Found {len(ipo_items)} total IPO items")
         
-        for row in rows:
-            # Skip empty rows or header rows
-            if not row.find('td') or row.find('th'):
-                continue
-            
-            cells = row.find_all('td')
-            if len(cells) < 10:  # Make sure we have enough columns
-                continue
-            
+        for item in ipo_items:
             try:
-                # Extract basic information
-                company_cell = cells[0]
-                company_link = company_cell.find('a')
-                if not company_link:
+                # Extract company name and stock code
+                name_elem = item.find('h4', {'class': 'item_name'})
+                if not name_elem:
                     continue
                 
-                # Extract company name and stock code
-                company_name = company_link.text.strip()
-                href = company_link.get('href', '')
-                stock_code_match = re.search(r'code=(\d+)', href)
-                stock_code = stock_code_match.group(1) if stock_code_match else None
+                link_elem = name_elem.find('a')
+                if not link_elem:
+                    continue
+                
+                company_name = link_elem.text.strip()
+                href = link_elem.get('href', '')
+                
+                # Extract stock code from div id or href
+                stock_code = item.get('id')  # The div has stock code as id
+                if not stock_code:
+                    stock_code_match = re.search(r'/ipo/([A-Z0-9]+)', href)
+                    stock_code = stock_code_match.group(1) if stock_code_match else None
                 
                 if not stock_code:
                     logger.warning(f"Failed to extract stock code for {company_name}")
                     continue
                 
-                # Extract other information
+                # Extract market type
+                market_elem = name_elem.find('span', {'class': 'type'})
+                market_type = market_elem.text.strip() if market_elem else ''
+                
+                # Extract info from list
+                info_list = item.find('ul', {'class': 'lst_info'})
+                if not info_list:
+                    continue
+                
                 ipo_info = {
                     'company_name': company_name,
                     'stock_code': stock_code,
-                    'market_type': cells[1].text.strip(),  # 시장구분
-                    'industry': cells[2].text.strip(),  # 업종
-                    'underwriters': cells[3].text.strip(),  # 주간사
-                    'offering_amount': self._parse_number(cells[4].text.strip()),  # 공모금액(억)
-                    'competition_rate': self._parse_number(cells[5].text.strip()),  # 경쟁률
-                    'desired_price': cells[6].text.strip(),  # 희망공모가
-                    'subscription_date': cells[7].text.strip(),  # 공모청약일
-                    'listing_date': cells[8].text.strip(),  # 상장일
-                    'detail_url': f"{self.base_url}{href}" if href.startswith('/') else href
+                    'market_type': market_type
                 }
+                
+                # Parse all info items
+                for li in info_list.find_all('li'):
+                    title_elem = li.find('em', {'class': 'tit'})
+                    if not title_elem:
+                        continue
+                    
+                    title = title_elem.text.strip()
+                    # Get the text after the title element
+                    value_text = li.text.replace(title, '').strip()
+                    
+                    # Handle special cases for values
+                    if title == '공모가':
+                        # Extract price from span if exists
+                        price_span = li.find('span', {'class': 'num'})
+                        ipo_info['offering_price'] = price_span.text.strip() if price_span else value_text
+                    elif title == '업종':
+                        ipo_info['industry'] = value_text
+                    elif title == '주관사':
+                        ipo_info['underwriters'] = value_text
+                    elif title == '진행상태':
+                        # Remove button text if exists
+                        ipo_info['status'] = value_text.replace('팁', '').strip()
+                    elif title == '개인청약':
+                        # Extract date from span if exists
+                        date_span = li.find('span', {'class': 'num'})
+                        ipo_info['subscription_date'] = date_span.text.strip() if date_span else value_text
+                    elif title == '상장일':
+                        ipo_info['listing_date'] = value_text
+                
+                # Set default values for missing fields
+                ipo_info.setdefault('offering_amount', None)
+                ipo_info.setdefault('competition_rate', None)
+                ipo_info.setdefault('underwriters', '')
                 
                 # Filter by target underwriters
                 if self._is_target_underwriter(ipo_info['underwriters']):
@@ -125,7 +157,7 @@ class NaverScraper(BaseScraper):
                     logger.debug(f"Skipping IPO: {company_name} - Underwriters: {ipo_info['underwriters']}")
                     
             except Exception as e:
-                logger.error(f"Error parsing IPO row: {e}")
+                logger.error(f"Error parsing IPO item: {e}")
                 continue
         
         logger.info(f"Found {len(ipo_list)} IPOs with target underwriters")

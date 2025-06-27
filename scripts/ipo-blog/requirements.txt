@@ -20,4 +20,7 @@ plotly==5.22.0
 kaleido==0.2.1  # For saving plotly charts as images
 
 # Utilities
-typing-extensions==4.12.2 
+typing-extensions==4.12.2
+
+# Testing
+pytest==8.2.2 
