@@ -10,12 +10,32 @@ from urllib.parse import urlparse, urljoin
 from urllib.robotparser import RobotFileParser
 from typing import Optional, Dict, Any
 import logging
+import ssl
+from requests.adapters import HTTPAdapter
+from urllib3.poolmanager import PoolManager
 
 # Suppress SSL warnings
 from urllib3.exceptions import InsecureRequestWarning
 warnings.filterwarnings('ignore', category=InsecureRequestWarning)
 
 logger = logging.getLogger(__name__)
+
+
+class TLSAdapter(HTTPAdapter):
+    """Custom adapter to handle old TLS versions"""
+    
+    def init_poolmanager(self, *args, **kwargs):
+        """Initialize pool manager with TLSv1"""
+        # Create custom SSL context
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        # Try to set minimum version to TLSv1
+        ctx.minimum_version = ssl.TLSVersion.TLSv1
+        ctx.set_ciphers('DEFAULT:@SECLEVEL=1')
+        
+        kwargs['ssl_context'] = ctx
+        return super(TLSAdapter, self).init_poolmanager(*args, **kwargs)
 
 
 class BaseScraper:
@@ -27,9 +47,14 @@ class BaseScraper:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
         }
         self.session.headers.update(self.headers)
+        
+        # Mount custom adapter for HTTPS with TLS v1 support
+        adapter = TLSAdapter()
+        self.session.mount('https://', adapter)
+        
         self.min_delay = 1.0  # Minimum delay between requests (seconds)
         self.max_delay = 3.0  # Maximum delay between requests (seconds)
-        self.max_retries = 3
+        self.max_retries = 1  # Reduced from 3 to 1 for faster testing
         self.last_request_time = 0
         self.robot_parsers: Dict[str, RobotFileParser] = {}
     

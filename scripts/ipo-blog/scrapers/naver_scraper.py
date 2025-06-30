@@ -164,10 +164,18 @@ class NaverScraper(BaseScraper):
                 ipo_info.setdefault('offering_amount', None)
                 ipo_info.setdefault('competition_rate', None)
                 ipo_info.setdefault('underwriters', '')
+                ipo_info.setdefault('subscription_date', '')
                 
-                # Filter by target underwriters
-                if self._is_target_underwriter(ipo_info['underwriters']):
-                    logger.info(f"Found IPO: {company_name} ({stock_code})")
+                # Check if has subscription date (not empty, not "미정")
+                has_subscription_date = (
+                    ipo_info.get('subscription_date') and 
+                    ipo_info['subscription_date'].strip() and 
+                    ipo_info['subscription_date'].strip() != '미정'
+                )
+                
+                # Filter by target underwriters AND subscription date
+                if self._is_target_underwriter(ipo_info['underwriters']) and has_subscription_date:
+                    logger.info(f"Found IPO with subscription date: {company_name} ({stock_code})")
                     logger.info(f"  - Market: {ipo_info.get('market_type', 'N/A')}")
                     logger.info(f"  - Industry: {ipo_info.get('industry', 'N/A')}")
                     logger.info(f"  - Underwriters: {ipo_info['underwriters']}")
@@ -177,13 +185,16 @@ class NaverScraper(BaseScraper):
                     logger.info(f"  - Listing Date: {ipo_info.get('listing_date', 'N/A')}")
                     ipo_list.append(ipo_info)
                 else:
-                    logger.debug(f"Skipping IPO: {company_name} - Underwriters: {ipo_info['underwriters']}")
+                    if not self._is_target_underwriter(ipo_info['underwriters']):
+                        logger.debug(f"Skipping IPO: {company_name} - Wrong underwriters: {ipo_info['underwriters']}")
+                    elif not has_subscription_date:
+                        logger.debug(f"Skipping IPO: {company_name} - No subscription date: {ipo_info.get('subscription_date', 'N/A')}")
                     
             except Exception as e:
                 logger.error(f"Error parsing IPO item: {e}")
                 continue
         
-        logger.info(f"Found {len(ipo_list)} IPOs with target underwriters")
+        logger.info(f"Found {len(ipo_list)} IPOs with target underwriters and subscription dates")
         return ipo_list
     
     def get_ipo_detail(self, stock_code: str) -> Optional[Dict[str, Any]]:

@@ -15,6 +15,7 @@ project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
 from scrapers.naver_scraper import NaverScraper
+from scrapers.comm38_scraper import Comm38Scraper
 
 # Initial logging configuration (console only)
 logging.basicConfig(
@@ -45,6 +46,7 @@ class IPOBlogAutomation:
         
         # 스크레이퍼 초기화
         self.naver_scraper = NaverScraper()
+        self.comm38_scraper = Comm38Scraper()
         
         logger.info("IPO Blog Automation System initialized")
     
@@ -94,15 +96,33 @@ class IPOBlogAutomation:
             # Merge basic and detailed info
             if detail:
                 ipo.update(detail)
-                logger.info(f"  ✓ Collected detailed information")
+                logger.info(f"  ✓ Collected detailed information from Naver")
                 if 'industry' in detail:
                     logger.info(f"    - Industry: {detail['industry']}")
                 if 'homepage' in detail:
                     logger.info(f"    - Homepage: {detail['homepage']}")
             else:
-                logger.warning(f"  ⚠ Failed to get detailed information")
+                logger.warning(f"  ⚠ Failed to get detailed information from Naver")
             
-            # TODO: Add comm38 scraper when implemented
+            # Get detailed info from 38 Communications
+            logger.info(f"  → Searching on 38 Communications...")
+            comm38_detail = self.comm38_scraper.get_ipo_detail(ipo['company_name'])
+            
+            if comm38_detail:
+                # Merge data, prioritizing comm38 for financial data
+                for key, value in comm38_detail.items():
+                    if key == 'financial_data' or (key not in ipo and value):
+                        ipo[key] = value
+                logger.info(f"  ✓ Collected detailed information from 38 Communications")
+                if 'financial_data' in comm38_detail:
+                    logger.info(f"    - Financial data collected")
+                if 'offering_amount' in comm38_detail:
+                    logger.info(f"    - Offering amount: {comm38_detail['offering_amount']}")
+                if 'institutional_competition_rate' in comm38_detail:
+                    logger.info(f"    - Institutional competition rate: {comm38_detail['institutional_competition_rate']}")
+            else:
+                logger.warning(f"  ⚠ Failed to get information from 38 Communications")
+            
             # TODO: Add news scraper when implemented
             
             enriched_ipos.append(ipo)
