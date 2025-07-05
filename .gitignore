@@ -70,3 +70,16 @@ yarn-error.log
 
 .idea/
 package-lock.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+ENV/
+.env
+.env.*
