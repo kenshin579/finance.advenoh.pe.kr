@@ -367,9 +367,223 @@ async def capture_fear_greed_gauge():
         finally:
             await browser.close()
 
-if __name__ == "__main__":
-    print("개선된 CNN Fear & Greed Index 게이지 캡처")
-    print("=" * 50)
+async def capture_finviz_sector_performance():
+    """Finviz 섹터 퍼포먼스 차트 캡처 - 처음부터 다시 작성"""
     
-    # 실행
-    asyncio.run(capture_fear_greed_gauge()) 
+    # 결과 저장 디렉토리 생성
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    output_dir = os.path.join(base_dir, "captured_finviz")
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    async with async_playwright() as p:
+        # Chromium 브라우저 실행
+        browser = await p.chromium.launch(
+            headless=True,
+            args=['--no-sandbox', '--disable-setuid-sandbox']
+        )
+        
+        # 새 페이지 생성 - 더 큰 뷰포트로 설정
+        page = await browser.new_page(
+            viewport={'width': 1920, 'height': 1200},
+            user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        )
+        
+        try:
+            # 1. Finviz Groups 페이지로 이동
+            url = "https://finviz.com/groups.ashx"
+            print(f"Finviz 섹터 퍼포먼스 페이지 로딩 중...")
+            print(f"URL: {url}")
+            await page.goto(url, wait_until='domcontentloaded', timeout=30000)
+            
+            # 페이지 로딩 대기
+            await page.wait_for_timeout(3000)
+            print("✓ 페이지 로딩 완료")
+            
+            # 2. Bar Chart 탭으로 이동 (1 DAY, 1 WEEK 차트가 있는 곳)
+            print("\nBar Chart 뷰로 이동 중...")
+            try:
+                # Bar Chart 링크 클릭
+                bar_chart_link = await page.query_selector('a[href*="v=210"]')
+                if bar_chart_link:
+                    await bar_chart_link.click()
+                    await page.wait_for_timeout(3000)
+                    print("✓ Bar Chart 뷰로 전환")
+                else:
+                    # 대체 방법
+                    await page.click('text=Bar Chart')
+                    await page.wait_for_timeout(3000)
+                    print("✓ Bar Chart 뷰로 전환")
+            except Exception as e:
+                print(f"Bar Chart 탭 클릭 실패: {str(e)}")
+                # URL로 직접 이동
+                await page.goto("https://finviz.com/groups.ashx?g=sector&v=210&o=name", wait_until='domcontentloaded')
+                await page.wait_for_timeout(3000)
+            
+            # 3. 차트 영역 찾기 - 간단하고 직접적인 방법
+            print("\n차트 캡처 준비 중...")
+            
+            # 전체 페이지 스크린샷
+            full_screenshot = await page.screenshot(full_page=True)
+            full_image = Image.open(io.BytesIO(full_screenshot))
+            print(f"페이지 전체 크기: {full_image.size}")
+            
+            # 디버깅용 전체 페이지 저장 (주석 처리)
+            # full_image.save(os.path.join(output_dir, 'finviz_full_page.png'))
+            
+            # 4. JavaScript로 차트 위치 정확히 찾기
+            chart_info = await page.evaluate('''() => {
+                const results = {
+                    charts: [],
+                    pageInfo: {
+                        width: document.documentElement.scrollWidth,
+                        height: document.documentElement.scrollHeight
+                    }
+                };
+                
+                // 모든 텍스트 노드에서 "1 DAY PERFORMANCE"와 "1 WEEK PERFORMANCE" 찾기
+                const walker = document.createTreeWalker(
+                    document.body,
+                    NodeFilter.SHOW_TEXT,
+                    null,
+                    false
+                );
+                
+                let node;
+                while (node = walker.nextNode()) {
+                    const text = node.textContent.trim();
+                    if (text === '1 DAY PERFORMANCE' || text === '1 WEEK PERFORMANCE') {
+                        // 부모 요소 찾기
+                        let parent = node.parentElement;
+                        while (parent && parent.tagName !== 'TD' && parent.tagName !== 'DIV') {
+                            parent = parent.parentElement;
+                        }
+                        
+                        if (parent) {
+                            // 차트 영역 찾기 (제목 아래의 테이블)
+                            let chartElement = parent.parentElement;
+                            while (chartElement && chartElement.tagName !== 'TABLE') {
+                                chartElement = chartElement.nextElementSibling || chartElement.parentElement;
+                            }
+                            
+                            if (chartElement) {
+                                const rect = chartElement.getBoundingClientRect();
+                                const titleRect = parent.getBoundingClientRect();
+                                
+                                results.charts.push({
+                                    title: text,
+                                    titleBounds: {
+                                        x: titleRect.x,
+                                        y: titleRect.y,
+                                        width: titleRect.width,
+                                        height: titleRect.height
+                                    },
+                                    chartBounds: {
+                                        x: rect.x,
+                                        y: rect.y,
+                                        width: rect.width,
+                                        height: rect.height
+                                    }
+                                });
+                            }
+                        }
+                    }
+                }
+                
+                // 대안: 섹터 이름이 포함된 테이블 직접 찾기
+                const tables = document.querySelectorAll('table');
+                tables.forEach(table => {
+                    const text = table.innerText || '';
+                    if (text.includes('Technology') && text.includes('Financial') && 
+                        text.includes('Healthcare') && text.includes('Energy')) {
+                        const rect = table.getBoundingClientRect();
+                        if (rect.width > 600) {
+                            // 중복 체크
+                            const isDuplicate = results.charts.some(chart => 
+                                Math.abs(chart.chartBounds.x - rect.x) < 10 && 
+                                Math.abs(chart.chartBounds.y - rect.y) < 10
+                            );
+                            
+                            if (!isDuplicate) {
+                                results.charts.push({
+                                    title: 'Sector Performance Table',
+                                    chartBounds: {
+                                        x: rect.x,
+                                        y: rect.y,
+                                        width: rect.width,
+                                        height: rect.height
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+                
+                return results;
+            }''')
+            
+            print(f"\n발견된 차트: {len(chart_info['charts'])}개")
+            
+            # 5. 자동 감지된 차트는 캡처하지 않음 (both_performances만 필요)
+            # JavaScript로 찾은 차트들은 스킵
+            
+            # 6. both_performances.png만 캡처
+            print("\nboth_performances.png 캡처 중...")
+            
+            # Bar Chart 뷰에서 1 DAY와 1 WEEK 차트를 함께 캡처
+            bar_chart_areas = [
+                {
+                    'name': 'both_performances',
+                    'bounds': (505, 210, 1340, 810)  # 두 차트 모두 포함 (최종 조정)
+                    # 위: 210px부터 (230 - 20)
+                    # 왼쪽: 505px부터 (480 + 25)
+                    # 오른쪽: 1340px까지 (1370 - 30)
+                    # 아래: 810px까지 (변경 없음)
+                }
+            ]
+            
+            for area in bar_chart_areas:
+                try:
+                    bounds = area['bounds']
+                    # 범위 확인
+                    left = max(0, bounds[0])
+                    top = max(0, bounds[1])
+                    right = min(full_image.width, bounds[2])
+                    bottom = min(full_image.height, bounds[3])
+                    
+                    cropped = full_image.crop((left, top, right, bottom))
+                    output_path = os.path.join(output_dir, f"{area['name']}.png")
+                    cropped.save(output_path)
+                    print(f"✓ {area['name']} 캡처 완료: {cropped.size}")
+                except Exception as e:
+                    print(f"❌ {area['name']} 캡처 실패: {str(e)}")
+            
+            print(f"\n✓ 모든 캡처가 '{output_dir}' 디렉토리에 저장되었습니다.")
+            
+        except Exception as e:
+            print(f"\n❌ 오류 발생: {str(e)}")
+            
+            # 오류 시 현재 화면 캡처
+            try:
+                await page.screenshot(
+                    path=os.path.join(output_dir, 'error_screenshot.png')
+                )
+                print("오류 스크린샷 저장됨")
+            except:
+                pass
+        
+        finally:
+            await browser.close()
+
+
+if __name__ == "__main__":
+    import sys
+    
+    if len(sys.argv) > 1 and sys.argv[1] == 'finviz':
+        print("Finviz 섹터 퍼포먼스 차트 캡처")
+        print("=" * 50)
+        asyncio.run(capture_finviz_sector_performance())
+    else:
+        print("개선된 CNN Fear & Greed Index 게이지 캡처")
+        print("=" * 50)
+        asyncio.run(capture_fear_greed_gauge()) 
