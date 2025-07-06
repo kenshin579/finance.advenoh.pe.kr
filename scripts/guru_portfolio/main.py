@@ -10,7 +10,7 @@ import sys
 import os
 from datetime import datetime
 
-from modules import DataFetcher, DataProcessor, Visualizer, ReportGenerator
+from modules import DataFetcher, DataProcessor, Visualizer, ReportGenerator, PerformanceTracker
 
 
 def main():
@@ -23,6 +23,7 @@ Examples:
   python main.py "Berkshire Hathaway Inc" "Q3 2024"
   python main.py "Bridgewater Associates" "Q2 2024" --output-dir results/
   python main.py "Scion Asset Management" "Q4 2023" --top-n 30
+  python main.py "ARK Invest" "Q3 2024" --compare-sp500 --lookback-quarters 4
         """
     )
     
@@ -43,6 +44,13 @@ Examples:
     parser.add_argument('--save-html', 
                        action='store_true',
                        help='Also save visualizations as interactive HTML files')
+    parser.add_argument('--compare-sp500', 
+                       action='store_true',
+                       help='Compare portfolio performance with S&P 500')
+    parser.add_argument('--lookback-quarters', 
+                       type=int, 
+                       default=4,
+                       help='Number of quarters to look back for performance comparison (default: 4)')
     
     args = parser.parse_args()
     
@@ -55,6 +63,8 @@ Examples:
     print(f"Company: {args.company}")
     print(f"Quarter: {args.quarter}")
     print(f"Output Directory: {args.output_dir}")
+    if args.compare_sp500:
+        print(f"Performance Comparison: Enabled (looking back {args.lookback_quarters} quarters)")
     print(f"{'='*60}\n")
     
     try:
@@ -80,6 +90,7 @@ Examples:
         if not args.no_visualizations:
             print("\n📈 Creating visualizations...")
             visualizer = Visualizer()
+            figures = {}
             
             # Create treemap
             print("   - Creating portfolio treemap...")
@@ -87,10 +98,12 @@ Examples:
                 treemap_data, 
                 f"{args.company} Portfolio - {args.quarter}"
             )
+            figures['portfolio_treemap'] = treemap_fig
             
             # Create sector pie chart
             print("   - Creating sector allocation chart...")
             sector_fig = visualizer.create_sector_pie_chart(processed_data)
+            figures['sector_allocation'] = sector_fig
             
             # Create concentration chart
             print("   - Creating top holdings chart...")
@@ -98,14 +111,72 @@ Examples:
                 processed_data, 
                 top_n=args.top_n
             )
+            figures['top_holdings'] = concentration_fig
+            
+            # Step 3.5: Create performance comparison if requested
+            if args.compare_sp500:
+                print("\n📊 Creating performance comparison with S&P 500...")
+                performance_tracker = PerformanceTracker()
+                
+                # Simulate historical portfolio data (in real scenario, you'd fetch historical 13F data)
+                print("   - Simulating historical portfolio values...")
+                holdings_history = performance_tracker.simulate_portfolio_from_holdings(
+                    processed_data, 
+                    lookback_quarters=args.lookback_quarters
+                )
+                
+                # Calculate portfolio performance
+                holdings_dfs = [h[1] for h in holdings_history]
+                dates = [h[0] for h in holdings_history]
+                portfolio_df = performance_tracker.calculate_portfolio_performance(holdings_dfs, dates)
+                
+                # Compare with S&P 500
+                print("   - Fetching S&P 500 data...")
+                start_date = dates[0]
+                end_date = dates[-1]
+                comparison_df = performance_tracker.compare_performance(
+                    portfolio_df, 
+                    start_date, 
+                    end_date
+                )
+                
+                # Calculate risk metrics
+                risk_metrics = performance_tracker.calculate_risk_metrics(comparison_df)
+                
+                # Create comparison charts
+                print("   - Creating performance comparison chart...")
+                performance_fig = visualizer.create_performance_comparison_chart(
+                    comparison_df, 
+                    company_name=args.company
+                )
+                figures['performance_comparison'] = performance_fig
+                
+                print("   - Creating returns comparison chart...")
+                try:
+                    returns_fig = visualizer.create_returns_comparison_chart(
+                        comparison_df, 
+                        company_name=args.company
+                    )
+                    figures['returns_comparison'] = returns_fig
+                except ValueError as e:
+                    print(f"   ⚠️  Skipping returns chart: {e}")
+                
+                print("   - Creating risk metrics chart...")
+                risk_fig = visualizer.create_risk_metrics_chart(
+                    risk_metrics, 
+                    company_name=args.company
+                )
+                figures['risk_metrics'] = risk_fig
+                
+                # Print performance summary
+                print(f"\n📊 Performance Summary:")
+                print(f"   - Portfolio Total Return: {risk_metrics.get('portfolio_total_return', 0):.2f}%")
+                print(f"   - S&P 500 Total Return: {risk_metrics.get('sp500_total_return', 0):.2f}%")
+                print(f"   - Relative Performance: {risk_metrics.get('relative_performance', 0):+.2f}%")
+                if risk_metrics.get('portfolio_beta') is not None:
+                    print(f"   - Portfolio Beta: {risk_metrics['portfolio_beta']:.2f}")
             
             # Save visualizations
-            figures = {
-                'portfolio_treemap': treemap_fig,
-                'sector_allocation': sector_fig,
-                'top_holdings': concentration_fig
-            }
-            
             visualizer.save_visualizations(figures, args.output_dir, save_html=args.save_html)
             print("✅ Visualizations saved")
         
@@ -133,10 +204,20 @@ Examples:
             print("  🖼️  portfolio_treemap.png - Portfolio treemap visualization")
             print("  🖼️  sector_allocation.png - Sector breakdown pie chart")
             print("  🖼️  top_holdings.png - Top holdings bar chart")
+            if args.compare_sp500:
+                print("  📈 performance_comparison.png - Performance vs S&P 500")
+                if 'returns_comparison' in figures:
+                    print("  📊 returns_comparison.png - Quarterly returns comparison")
+                print("  📊 risk_metrics.png - Risk-adjusted metrics comparison")
             if args.save_html:
                 print("  🌐 portfolio_treemap.html - Interactive treemap")
                 print("  🌐 sector_allocation.html - Interactive sector chart")
                 print("  🌐 top_holdings.html - Interactive holdings chart")
+                if args.compare_sp500:
+                    print("  🌐 performance_comparison.html - Interactive performance chart")
+                    if 'returns_comparison' in figures:
+                        print("  🌐 returns_comparison.html - Interactive returns chart")
+                    print("  🌐 risk_metrics.html - Interactive risk metrics chart")
         
     except ValueError as e:
         print(f"\n❌ Error: {str(e)}")
