@@ -20,7 +20,7 @@ formulas = [
     {
         'name': 'dividend_yield_calculation',
         # 숫자만 있는 분수는 LaTeX로 표현
-        'text': r'$= \frac{3,540}{53,900} \times 100 \approx 6.57\%$',
+        'text': r'$= \frac{3,540}{55,200} \times 100 \approx 6.41\%$',
         'figsize': (2.8, 0.8),
         'fontsize': 11,
         'dpi': 200
