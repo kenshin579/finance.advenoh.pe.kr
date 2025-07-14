@@ -2,7 +2,7 @@
 
 # Frank's Finance Blog - Table of Contents
 
-Updated 2025-05-25
+Updated 2025-07-14
 
 현재 [블로그](https://finance.advenoh.pe.kr)에 작성된 내용입니다.
 
@@ -50,6 +50,7 @@ Updated 2025-05-25
 * [CMA의 종류](https://finance.advenoh.pe.kr/cma의-종류/)
 * [CPI와 PPI의 차이점](https://finance.advenoh.pe.kr/cpi와-ppi의-차이점/)
 * [ISA 만기, 연장할까 해지할까? 꼭 알아야 할 선택 가이드](https://finance.advenoh.pe.kr/isa-만기-연장할까-해지할까-꼭-알아야-할-선택-가이드/)
+* [SK텔레콤 주가 배당수익률로 방어선은 어디일까?](https://finance.advenoh.pe.kr/SK텔레콤-주가-배당수익률로-방어선은-어디일까/)
 * [TDF에 대해서 알아보자](https://finance.advenoh.pe.kr/tdf-에-대해서-알아보자/)
 * [경기침체 징조는 어떻게 판단하나](https://finance.advenoh.pe.kr/경기침체-징조는-어떻게-판단하나/)
 * [공매도란? 대차거래부터 개인투자자 영향까지 완벽 정리](https://finance.advenoh.pe.kr/공매도란-대차거래부터-개인투자자-영향까지-완벽-정리/)
