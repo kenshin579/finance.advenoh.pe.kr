@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - includeAll:
+      path: "changelog"
+      endsWithFilter: ".sql"
+      minDepth: 2
+      maxDepth: 2
+      resourceComparator: "com.arcbrain.liquibase.NaturalOrderComparator" 
